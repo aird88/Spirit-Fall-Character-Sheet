@@ -1857,18 +1857,19 @@
                     <div class="sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">Notes</div>
                     <div class="sheet-col-2-9" title="What magazine would you like to load into the weapon?">
                         <select name="attr_rangedloaded1">
-                            <option value="@{ammunition1}">Magazine 1</option>
-                            <option value="@{ammunition2}">Magazine 2</option>
-                            <option value="@{ammunition3}">Magazine 3</option>
-                            <option value="@{ammunition4}">Magazine 4</option>
-                            <option value="@{ammunition5}">Magazine 5</option>
-                            <option value="@{ammunition6}">Magazine 6</option>
-                            <option value="@{ammunition7}">Quiver 1</option>
-                            <option value="@{ammunition8}">Quiver 2</option>
+                            <option type="text" value="@{ammunition1}" selected>Magazine 1</option>
+                            <option type="text" value="@{ammunition2}">Magazine 2</option>
+                            <option type="text" value="@{ammunition3}">Magazine 3</option>
+                            <option type="text" value="@{ammunition4}">Magazine 4</option>
+                            <option type="text" value="@{ammunition5}">Magazine 5</option>
+                            <option type="text" value="@{ammunition6}">Magazine 6</option>
+                            <option type="text" value="@{ammunition7}">Quiver 1</option>
+                            <option type="text" value="@{ammunition8}">Quiver 2</option>
                         </select>
                     </div>
                     <div class="sheet-col-1-9">
-                        <input type="number" name="attr_rangedloaded1" value="@{rangedloaded1}" />
+                        <input type="text" name="attr_rangedammo1" value="@{rangedloaded1}" disabled="true"/>
+                        
                     </div>
                     <div class="sheet-col-2-3">
                         <input type="text" name="attr_rangednotes1">
@@ -1975,14 +1976,14 @@
                     <div class="sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">Notes</div>
                     <div class="sheet-col-2-9" title="What magazine would you like to load into the weapon?">
                         <select name="attr_rangedloaded2">
-                            <option value="@{ammunition1}">Magazine 1</option>
-                            <option value="@{ammunition2}">Magazine 2</option>
-                            <option value="@{ammunition3}">Magazine 3</option>
-                            <option value="@{ammunition4}">Magazine 4</option>
-                            <option value="@{ammunition5}">Magazine 5</option>
-                            <option value="@{ammunition6}">Magazine 6</option>
-                            <option value="@{ammunition7}">Quiver 1</option>
-                            <option value="@{ammunition8}">Quiver 2</option>
+                            <option name="attr_magazine1" value="@{ammunition1}">Magazine 1</option>
+                            <option name="attr_magazine2" value="@{ammunition2}">Magazine 2</option>
+                            <option name="attr_magazine3" value="@{ammunition3}">Magazine 3</option>
+                            <option name="attr_magazine4" value="@{ammunition4}">Magazine 4</option>
+                            <option name="attr_magazine5" value="@{ammunition5}">Magazine 5</option>
+                            <option name="attr_magazine6" value="@{ammunition6}">Magazine 6</option>
+                            <option name="attr_quiver1" value="@{ammunition7}">Quiver 1</option>
+                            <option name="attr_quiver2" value="@{ammunition8}">Quiver 2</option>
                         </select>
                     </div>
                     <div class="sheet-col-1-9">
@@ -2264,7 +2265,7 @@
                             <input type="number" class="sheet-passive-skill-score" name="attr_total_weight" value="@{backpack_weight} + @{pockets_weight} + @{magazine_weight} + @{equipped_weight}" disabled="disabled"/>
                         </div>
                         <div class="sheet-col-1-6 sheet-center">
-                            <input type="number" class="sheet-passive-skill-score" title="The maximum total weight your character can carry" value="@{carry_max}" disabled="disabled"/>
+                            <input type="number" class="sheet-passive-skill-score"  name="attr_maximum_weight" title="The maximum total weight your character can carry" value="@{carry_max}" disabled="disabled"/>
                         </div>
                     </div>
                 </div>
@@ -2298,8 +2299,9 @@
                             <div class="sheet-col-1-15 sheet-center sheet-small-label">Consume</div>
         					<div class="sheet-col-1-15 sheet-center sheet-small-label">Qty</div>
         					<div class="sheet-col-4-15 sheet-center sheet-small-label">Name</div>
-        					<div class="sheet-col-7-15 sheet-center sheet-small-label">Descripton</div>
+        					<div class="sheet-col-6-15 sheet-center sheet-small-label">Descripton</div>
                             <div class="sheet-col-1-15 sheet-center sheet-small-label">Weight</div>
+                            <div class="sheet-col-1-15 sheet-center sheet-small-label">Value</div>
         				</div>
 
                 <!-- BEGIN backpack row 1-->
@@ -2315,13 +2317,11 @@
                     </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_1" value="1" min="0" step="1" /></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_1" /></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_1" /></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_1" /></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_1" value="0" step="0.5" /></div>
+                		    <div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_1"></div>
                 		</div>
-                			
-                	</div>
-                			
-                	<!-- END backpack row 1-->
+                    <!-- END backpack row 1-->
                     
                     <!-- BEGIN backpack row 2-->
                     <div class="sheet-inventory-row1">
@@ -2336,12 +2336,10 @@
                     </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_2" value="1" min="0" step="1" /></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_2" /></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_2" /></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_2" /></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_2" value="0" step="0.5" /></div>
-                		</div>
-                			
+                		    <div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_2"></div>
                 	</div>
-                			
                 	<!-- END backpack row 2-->
                     
                     <!-- BEGIN backpack row 3-->
@@ -2357,9 +2355,9 @@
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_3" value="1" min="0" step="1" /></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_3" /></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_3" /></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_3" /></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_3" value="0" step="0.5" /></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_3"></div>
                 	</div>
                 			
                 	<!-- END backpack row 3-->
@@ -2370,16 +2368,16 @@
                     	<div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">4</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable4">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_4" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_4"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_4"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_4"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_4" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_4"></div>
                 	</div>		
                 	<!-- END backpack row 4-->
                     
@@ -2389,16 +2387,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">5</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable5">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_5" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_5"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_5"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_5"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_5" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_5"></div>
                 	</div>		
                 	<!-- END backpack row 5-->
                     
@@ -2408,16 +2406,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">6</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable6">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_6" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_6"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_6"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_6"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_6" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_6"></div>
                 	</div>		
                 	<!-- END backpack row 6-->
                     
@@ -2427,16 +2425,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">7</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable7">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_7" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_7"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_7"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_7"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_7" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_7"></div>
                 	</div>		
                 	<!-- END backpack row 7-->
                     
@@ -2446,16 +2444,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">8</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable8">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_8" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_8"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_8"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_8"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_8" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_8"></div>
                 	</div>		
                 	<!-- END backpack row 8-->
                     
@@ -2465,16 +2463,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">9</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable9">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_9" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_9"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_9"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_9"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_9" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_9"></div>
                 	</div>		
                 	<!-- END backpack row 9-->
                     
@@ -2484,16 +2482,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">10</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable10">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_10" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_10"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_10"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_10"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_10" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_10"></div>
                 	</div>		
                 	<!-- END backpack row 10-->
                     
@@ -2503,19 +2501,17 @@
                 		<div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">11</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable1">
+                    <select name="attr_backpack_consumable11">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                     </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_11" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_11"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_11"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_11"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_11" value="0" step="0.5"></div>
-                		</div>
-                			
-                	</div>
-                			
+                		    <div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_11"></div>
+                		</div>		
                 	<!-- END backpack row 11-->
                     
                     <!-- BEGIN backpack row 12-->
@@ -2524,19 +2520,17 @@
                 		<div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">12</div>
                 			<div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable2">
+                    <select name="attr_backpack_consumable12">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                     </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_12" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_12"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_12"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_12"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_12" value="0" step="0.5"></div>
-                		</div>
-                			
-                	</div>
-                			
+                	        <div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_12"></div>
+                    </div>	
                 	<!-- END backpack row 12-->
                     
                     <!-- BEGIN backpack row 13-->
@@ -2545,16 +2539,16 @@
                 		<div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">13</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable13">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_13" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_13"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_13"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_13"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_13" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_13"></div>
                 	</div>
                 			
                 	<!-- END backpack row 13-->
@@ -2565,16 +2559,16 @@
                     	<div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">14</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable14">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_14" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_14"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_14"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_14"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_14" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_14"></div>
                 	</div>		
                 	<!-- END backpack row 14-->
                     
@@ -2584,16 +2578,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">15</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable15">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_15" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_15"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_15"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_15"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_15" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_15"></div>
                 	</div>		
                 	<!-- END backpack row 15-->
                     
@@ -2603,16 +2597,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">16</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable16">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_16" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_16"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_16"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_16"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_16" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_16"></div>
                 	</div>		
                 	<!-- END backpack row 16-->
                     
@@ -2622,16 +2616,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">17</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable17">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_17" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_17"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_17"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_17"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_17" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_17"></div>
                 	</div>		
                 	<!-- END backpack row 17-->
                     
@@ -2641,35 +2635,35 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">18</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable18">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_18" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_18"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_18"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_18"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_18" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_18"></div>
                 	</div>		
-                	<!-- END backpack row 8-->
+                	<!-- END backpack row 18-->
                     
-                    <!-- BEGIN backpack row 9-->
+                    <!-- BEGIN backpack row 19-->
                     <div class="sheet-inventory-row1">
                         
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">19</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable19">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_19" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_19"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_19"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_19"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_19" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_19"></div>
                 	</div>		
                 	<!-- END backpack row 19-->
                     
@@ -2679,16 +2673,16 @@
                         <div class="sheet-row sheet-grey-row">
                 			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">20</div>
                             <div class="sheet-col-1-15" title="Is this itema a consumable?">
-                    <select name="attr_backpack_consumable3">
+                    <select name="attr_backpack_consumable20">
                             <option value="is a consumable item.">Yes</option>
                             <option value="can be used as many times as needed." selected="select">No</option>
                         </select>
                         </div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_20" value="1" min="0" step="1"></div>
                 			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_20"></div>
-                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_20"></div>
+                			<div class="sheet-col-6-15"><input type="text" name="attr_backpack_description_20"></div>
                             <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_20" value="0" step="0.5"></div>
-                			
+                			<div class="sheet-col-1-15"><input type="text" name="attr_backpack_cost_20"></div>
                 	</div>		
                 	<!-- END backpack row 20-->
 
@@ -2697,6 +2691,16 @@
                     </div>
 
                     <!-- END backpack page -->
+<div hidden>
+<input type="text" name="attr_ammunition1" value="1" >
+                            <input type="text" name="attr_ammunition2" value="2" >
+                            <input type="text" name="attr_ammunition3" value="3" >
+                            <input type="text" name="attr_ammunition4" value="4" >
+                            <input type="text" name="attr_ammunition5" value="5" >
+                            <input type="text" name="attr_ammunition6" value="6" >
+                            <input type="text" name="attr_ammunition7" value="7" >
+                            <input type="text" name="attr_ammunition8" value="8" >
+</div>
 
             </div>
         </div>
