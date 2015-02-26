@@ -6,7 +6,7 @@
                 <img src="http://i.imgur.com/wh6ypv8.jpg" alt="Spirit Fall">
             </div>
             <div class="sheet-col-1-4 sheet-center sheet-margin-top">
-                <p class="sheet-last-updated">Beta Version .75 -- 23 Nov 2014
+                <p class="sheet-last-updated">Beta Version .80 -- 25 Nov 2014
                     <br/>Aaron Davis</p>
             </div>
             <div class="sheet-col-1-2 sheet-small-label sheet-center">
@@ -19,7 +19,7 @@
     <div class="sheet-player">
         <input type="radio" name="attr_tab" class="sheet-tab sheet-tab1" value="1" title="Core Stats" checked="checked" /> <span class="sheet-tab sheet-tab1">Stats</span>
 
-        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" />	<span class="sheet-tab sheet-tab2">Skills</span>
+        <input type="radio" name="attr_tab" class="sheet-tab sheet-tab2" value="2" />    <span class="sheet-tab sheet-tab2">Skills</span>
 
         <input type="radio" name="attr_tab" class="sheet-tab sheet-tab3" value="3" />	<span class="sheet-tab sheet-tab3">About</span>
 
@@ -171,7 +171,7 @@
                             <div class="sheet-col-1-2 sheet-core-stat-label">Carry Max</div>
                             <div class="sheet-col-1-12 sheet-center sheet-small-label">&nbsp;</div>
                             <div class="sheet-col-1-4">
-                                <input type="number" class="sheet-passive-skill-score" name="attr_carry_max" value="@{strength}+10" disabled="disabled" />
+                                <input type="number" class="sheet-passive-skill-score" name="attr_carry_max" value="@{strength}+10" disabled="enable" />
                             </div>
                         </div>
                         <div class="sheet-row">
@@ -182,7 +182,7 @@
                             <div class="sheet-col-1-2 sheet-core-stat-label">Encumberance</div>
                             <div class="sheet-col-1-12 sheet-center sheet-small-label">&nbsp;</div>
                             <div class="sheet-col-1-4">
-                                <input type="number" class="sheet-passive-skill-score" name="attr_carry_max" value="@{endurance}+0" disabled="disabled" />
+                                <input type="number" class="sheet-passive-skill-score" name="attr_endurance_max" value="@{endurance}+0" disabled="disabled" />
                             </div>
                         </div>
                         <div class="sheet-row">
@@ -532,7 +532,7 @@
                         </div>
                     </div>
                     <div class="sheet-row sheet-skill-row">
-                        <div class="sheet-col-7-22 sheet-skill-name">Ekectrical Construction</div>
+                        <div class="sheet-col-7-22 sheet-skill-name">Electrical Construction</div>
                         <div class="sheet-col-1-8">
                             <input type="number" name="attr_electrical_points" value="0" step="1" />
                         </div>
@@ -552,19 +552,19 @@
                     <div class="sheet-row sheet-skill-row">
                         <div class="sheet-col-7-22 sheet-skill-name">Omni Util Construction</div>
                         <div class="sheet-col-1-8">
-                            <input type="number" name="attr_omniutil_points" value="0" step="1" />
+                            <input type="number" name="attr_omni_construct_points" value="0" step="1" />
                         </div>
                         <div class="sheet-col-1-8">
-                            <input type="number" name="attr_omniutil_base" value="1" disabled="disabled" />
+                            <input type="number" name="attr_omni_construct_base" value="1" disabled="disabled" />
                         </div>
                         <div class="sheet-col-1-8">
-                            <input type="number" class="sheet-passive-skill-score" name="attr_omniutil" value="@{omniutil_points}+@{omniutil_base}" disabled="disabled" />
+                            <input type="number" class="sheet-passive-skill-score" name="attr_omni_construct" value="@{omni_construct_points}+@{omni_construct_base}" disabled="disabled" />
                         </div>
                         <div class="sheet-col-1-8">
-                            <input type="number" name="attr_omniutil_success" value="0" step="1" />
+                            <input type="number" name="attr_omni_construct_success" value="0" step="1" />
                         </div>
                         <div class="sheet-col-1-8">
-                            <input type="number" name="attr_omniutil_fail" value="0" step="1" />
+                            <input type="number" name="attr_omni_construct_fail" value="0" step="1" />
                         </div>
                     </div>
                     <div class="sheet-row sheet-skill-row">
@@ -706,21 +706,21 @@
                         </div>
                     </div>
                     <div class="sheet-row sheet-skill-row">
-                        <div class="sheet-col-7-22 sheet-skill-name">Omni-Util. Construction</div>
+                        <div class="sheet-col-7-22 sheet-skill-name">Omni-Utilium</div>
                         <div class="sheet-col-1-8">
-                            <input type="number" name="attr_omni_construct_points" value="0" step="1" />
+                            <input type="number" name="attr_omni_utilium_points" value="0" step="1" />
                         </div>
                         <div class="sheet-col-1-8">
-                            <input type="number" name="attr_omni_construct_base" value="5" disabled="disabled" />
+                            <input type="number" name="attr_omni_utilium_base" value="5" disabled="disabled" />
                         </div>
                         <div class="sheet-col-1-8">
-                            <input type="number" class="sheet-passive-skill-score" name="attr_omni_construct" value="@{omni_construct_points}+@{omni_construct_base}" disabled="disabled" />
+                            <input type="number" class="sheet-passive-skill-score" name="attr_omni_utilium" value="@{omni_utilium_points}+@{omni_utilium_base}" disabled="disabled" />
                         </div>
                         <div class="sheet-col-1-8">
-                            <input type="number" name="attr_omni_construct_success" value="0" step="1" />
+                            <input type="number" name="attr_omni_utilium_success" value="0" step="1" />
                         </div>
                         <div class="sheet-col-1-8">
-                            <input type="number" name="attr_omni_construct_fail" value="0" step="1" />
+                            <input type="number" name="attr_omni_utilium_fail" value="0" step="1" />
                         </div>
                     </div>
                     <!-- End knowledge section -->
@@ -1494,25 +1494,25 @@
             	<h3 class="sheet-center">About</h3>	
             <div class="sheet-row">
                 <div class="sheet-col-1-7 sheet-small-label sheet-center">
-                    <input class="sheet-underlined sheet-center" type="text" name="attr_gender">
+                    <input class="sheet-underlined sheet-center" type="text" name="attr_gender" />
                     <br/>Gender</div>
                 <div class="sheet-col-1-7 sheet-small-label sheet-center">
-                    <input class="sheet-underlined sheet-center" type="number" name="attr_age">
+                    <input class="sheet-underlined sheet-center" type="number" name="attr_age" />
                     <br/>Age</div>
                 <div class="sheet-col-1-7 sheet-small-label sheet-center">
-                    <input class="sheet-underlined sheet-center" type="text" name="attr_height">
+                    <input class="sheet-underlined sheet-center" type="text" name="attr_height" />
                     <br/>Height</div>
                 <div class="sheet-col-1-7 sheet-small-label sheet-center">
-                    <input class="sheet-underlined sheet-center" type="text" name="attr_weight">
+                    <input class="sheet-underlined sheet-center" type="text" name="attr_weight" />
                     <br/>Weight</div>
                 <div class="sheet-col-1-7 sheet-small-label sheet-center">
-                    <input class="sheet-underlined sheet-center" type="text" name="attr_eyes">
+                    <input class="sheet-underlined sheet-center" type="text" name="attr_eyes" />
                     <br/>Eyes</div>
                 <div class="sheet-col-1-7 sheet-small-label sheet-center">
-                    <input class="sheet-underlined sheet-center" type="text" name="attr_hair">
+                    <input class="sheet-underlined sheet-center" type="text" name="attr_hair" />
                     <br/>Hair</div>
                 <div class="sheet-col-1-7 sheet-small-label sheet-center">
-                    <input class="sheet-underlined sheet-center" type="text" name="attr_body_type">
+                    <input class="sheet-underlined sheet-center" type="text" name="attr_body_type" />
                     <br/>Body Type</div>
             </div>
             <!-- Begin traits and fears section -->
@@ -1521,7 +1521,7 @@
                      <h3 class="sheet-center">Traits</h3>
 
                     <div class="sheet-row sheet-padb">
-                        <input type="text" class="sheet-center" name="attr_trait_1" value="Trait Name">
+                        <input type="text" class="sheet-center" name="attr_trait_1" value="Trait Name" />
                     </div>
                     <div class="sheet-row sheet-padb">
                         <textarea name="attr_trait_1_desc">Trait Description</textarea>
@@ -1539,7 +1539,7 @@
                     	<h3 class="sheet-center">Fears</h3>
 
                     <div class="sheet-row sheet-padb">
-                        <input type="text" class="sheet-center" name="attr_fear_1" value="Fear Name">
+                        <input type="text" class="sheet-center" name="attr_fear_1" value="Fear Name" />
                     </div>
                     <div class="sheet-row sheet-padb">
                         <textarea name="attr_fear_1_desc">Fear Description</textarea>
@@ -1576,7 +1576,7 @@
             <!-- BEGIN melee weapon row -->
             <div class="sheet-row">
                 <div class="sheet-col-1-6">
-                    <input type="text" name="attr_meleeweapon1">
+                    <input type="text" name="attr_meleeweapon1" />
                 </div>
                 <div class="sheet-col-1-8" title="What type of damage does the weapon do?">
                     <select name="attr_meleetype1">
@@ -1615,14 +1615,14 @@
                     </select>
                 </div>
                 <div class="sheet-col-5-16">
-                    <input type="text" name="attr_meleenotes1">
+                    <input type="text" name="attr_meleenotes1" />
                 </div>
             </div>
             <!-- END melee weapon row -->
             <!-- BEGIN melee weapon row -->
             <div class="sheet-row">
                 <div class="sheet-col-1-6">
-                    <input type="text" name="attr_meleeweapon2">
+                    <input type="text" name="attr_meleeweapon2" />
                 </div>
                 <div class="sheet-col-1-8" title="What type of damage does the weapon do?">
                     <select name="attr_meleetype2">
@@ -1661,14 +1661,14 @@
                     </select>
                 </div>
                 <div class="sheet-col-5-16">
-                    <input type="text" name="attr_meleenotes2">
+                    <input type="text" name="attr_meleenotes2" />
                 </div>
             </div>
             <!-- END melee weapon row -->
             <!-- BEGIN melee weapon row -->
             <div class="sheet-row">
                 <div class="sheet-col-1-6">
-                    <input type="text" name="attr_meleeweapon3">
+                    <input type="text" name="attr_meleeweapon3" />
                 </div>
                 <div class="sheet-col-1-8" title="What type of damage does the weapon do?">
                     <select name="attr_meleetype3">
@@ -1707,7 +1707,7 @@
                     </select>
                 </div>
                 <div class="sheet-col-5-16">
-                    <input type="text" name="attr_meleenotes3">
+                    <input type="text" name="attr_meleenotes3" />
                 </div>
             </div>
             <!-- END melee weapon row -->
@@ -1777,7 +1777,7 @@
             <!-- BEGIN ranged weapon row -->
             <div class="sheet-row">
                 <div class="sheet-col-1-6">
-                    <input type="text" name="attr_rangedweapon1">
+                    <input type="text" name="attr_rangedweapon1" />
                 </div>
                 <div class="sheet-col-1-10" title="How big is the weapon?">
                     <select name="attr_rangedsize1">
@@ -1804,6 +1804,7 @@
                     <select name="attr_rangeddmg1">
                         <option value="15">15</option>
                         <option value="20">20</option>
+                        <option value="20 + 1d4">20 + 1d4</option>
                         <option value="30">30</option>
                         <option value="35">35</option>
                         <option value="40">40</option>
@@ -1918,9 +1919,10 @@
                     <input type="number" class="sheet-passive-skill-score" name="attr_ranged2" value="@{rangedtype2}+@{rangedmod2}" disabled="disabled" />
                 </div>
                 <div class="sheet-col-1-10" title="What is the damage of the weapon?">
-                    <select name="attr_rangeddmg1">
+                    <select name="attr_rangeddmg2">
                         <option value="15">15</option>
                         <option value="20">20</option>
+                        <option value="20 + 1d4">20 + 1d4</option>
                         <option value="30">30</option>
                         <option value="35">35</option>
                         <option value="40">40</option>
@@ -1987,7 +1989,7 @@
                         <input type="number" name="attr_rangedloaded2" value="@{rangedloaded2}" />
                     </div>
                     <div class="sheet-col-2-3">
-                        <input type="text" name="attr_rangednotes2">
+                        <input type="text" name="attr_rangednotes2" />
                     </div>
                 </div>
                 <!-- END ranged weapon row -->
@@ -2011,7 +2013,7 @@
             <!-- BEGIN ranged weapon row -->
             <div class="sheet-row">
                 <div class="sheet-col-1-6">
-                    <input type="text" name="attr_rangedweapon3">
+                    <input type="text" name="attr_rangedweapon3" />
                 </div>
                 <div class="sheet-col-1-10" title="How big is the weapon?">
                     <select name="attr_rangedsize3">
@@ -2038,6 +2040,7 @@
                     <select name="attr_rangeddmg3">
                         <option value="15">15</option>
                         <option value="20">20</option>
+                        <option value="20 + 1d4">20 + 1d4</option>
                         <option value="30">30</option>
                         <option value="35">35</option>
                         <option value="40">40</option>
@@ -2104,7 +2107,7 @@
                         <input type="number" name="attr_rangedloaded3" value="@{rangedloaded3}" />
                     </div>
                     <div class="sheet-col-2-3">
-                        <input type="text" name="attr_rangednotes3">
+                        <input type="text" name="attr_rangednotes3" />
                     </div>
                 </div>
                 <!-- END ranged weapon row -->
@@ -2128,7 +2131,7 @@
             <!-- BEGIN ranged weapon row -->
             <div class="sheet-row">
                 <div class="sheet-col-1-6">
-                    <input type="text" name="attr_rangedweapon3">
+                    <input type="text" name="attr_rangedweapon3" />
                 </div>
                 <div class="sheet-col-1-10" title="How big is the weapon?">
                     <select name="attr_rangedsize4">
@@ -2155,6 +2158,7 @@
                     <select name="attr_rangeddmg4">
                         <option value="15">15</option>
                         <option value="20">20</option>
+                        <option value="20 + 1d4">20 + 1d4</option>
                         <option value="30">30</option>
                         <option value="35">35</option>
                         <option value="40">40</option>
@@ -2221,7 +2225,7 @@
                         <input type="number" name="attr_rangedloaded4" value="@{rangedloaded4}" />
                     </div>
                     <div class="sheet-col-2-3">
-                        <input type="text" name="attr_rangednotes4">
+                        <input type="text" name="attr_rangednotes4" />
                     </div>
                 </div>
                 <!-- END ranged weapon row -->
@@ -2245,22 +2249,22 @@
                     </div>
                     <div class="sheet-row">
                         <div class="sheet-col-1-6 sheet-center">
-                            <input type="number" name="attr_backpack_weight" value="@{backpack_weight_calc}" disabled="disabled">
+                            <input type="number" name="attr_backpack_weight" value="@{backpack_weight_calc}" disabled="disabled"/>
                         </div>
                         <div class="sheet-col-1-6 sheet-center">
-                            <input type="number" name="attr_pockets_weight" value="@{pockets_weight_calc}" disabled="disabled">
+                            <input type="number" name="attr_pockets_weight" value="@{pockets_weight_calc}" disabled="disabled"/>
                         </div>
                         <div class="sheet-col-1-6 sheet-center">
-                            <input type="number" name="attr_magazine_weight" value="@{magazine_weight_calc}" disabled="disabled">
+                            <input type="number" name="attr_magazine_weight" value="@{magazine_weight_calc}" disabled="disabled"/>
                         </div>
                         <div class="sheet-col-1-6 sheet-center">
-                            <input type="number" name="attr_equipped_weight" value="@{equipped_weight_calc}" disabled="disabled">
+                            <input type="number" name="attr_equipped_weight" value="@{equipped_weight_calc}" disabled="disabled"/>
                         </div>
                         <div class="sheet-col-1-6 sheet-center sheet-padr">
-                            <input type="number" class="sheet-passive-skill-score" name="attr_total_weight" value="@{backpack_weight} + @{pockets_weight} + @{magazine_weight} + @{equipped_weight}" disabled="disabled">
+                            <input type="number" class="sheet-passive-skill-score" name="attr_total_weight" value="@{backpack_weight} + @{pockets_weight} + @{magazine_weight} + @{equipped_weight}" disabled="disabled"/>
                         </div>
                         <div class="sheet-col-1-6 sheet-center">
-                            <input type="number" class="sheet-passive-skill-score" name="attr_total_weight_max" title="The maximum total weight your character can carry" value="@{carry_max}+0" disabled="disabled">
+                            <input type="number" class="sheet-passive-skill-score" title="The maximum total weight your character can carry" value="@{carry_max}" disabled="disabled"/>
                         </div>
                     </div>
                 </div>
@@ -2270,13 +2274,430 @@
 
                 <div class="sheet-row sheet-margin-bottom">
                     <div class="sheet-col-1">
-                        <div hidden>
-                            <input type="number" name="attr_weight_unit_setting" value="1">
-                        </div>
-                        <p class="sheet-small-note">Total weight is calculated by quantity * weight.</p>
+                            <input type="radio" name="attr_inventorytab" class="sheet-inventorytab sheet-inventorytab1" value="1" title="Backpack" checked="checked" />
+                    		<span class="sheet-inventorytab sheet-inventorytab1">Backpack</span>
+                			<input type="radio" name="attr_inventorytab" class="sheet-inventorytab sheet-inventorytab2" value="2" title="Pockets" disabled="disabled" />
+                			<span class="sheet-inventorytab sheet-inventorytab2">Pockets</span>
+                			<input type="radio" name="attr_inventorytab" class="sheet-inventorytab sheet-inventorytab3" value="3" title="Magazines" disabled="disabled" />
+                			<span class="sheet-inventorytab sheet-inventorytab3">Magazines</span>
+                			<input type="radio" name="attr_inventorytab" class="sheet-inventorytab sheet-inventorytab4" value="4" title="Equipped" disabled="disabled" />
+                			<span class="sheet-inventorytab sheet-inventorytab4">Equipped</span>
+                			<input type="radio" name="attr_inventorytab" class="sheet-inventorytab sheet-inventorytab99" value="99" title="Show All" disabled="disabled" />
+                			<span class="sheet-inventorytab sheet-inventorytab99">Show All</span>
+                			<span class="sheet-spacer"></span>
+
+<!-- BEGIN AUTO GENERATED CONTENT -->
+            		
+        			<!-- BEGIN backpack page -->
+        			<div class="sheet-inventory-page1">
+                			<h3 class="sheet-center">Backpack</h3>
+                            <p class="sheet-small-note">Total weight is calculated by quantity * weight.</p>
+                            </div>
+        				<div class="sheet-row sheet-sub-header">	
+        					<div class="sheet-col-1-15 sheet-center sheet-small-label">Row #</div>
+                            <div class="sheet-col-1-15 sheet-center sheet-small-label">Consume</div>
+        					<div class="sheet-col-1-15 sheet-center sheet-small-label">Qty</div>
+        					<div class="sheet-col-4-15 sheet-center sheet-small-label">Name</div>
+        					<div class="sheet-col-7-15 sheet-center sheet-small-label">Descripton</div>
+                            <div class="sheet-col-1-15 sheet-center sheet-small-label">Weight</div>
+        				</div>
+
+                <!-- BEGIN backpack row 1-->
+                    <div class="sheet-inventory-row1">
+                		
+                		<div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">1</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable1">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
                     </div>
-                </div>
-                <!-- CREATE INVENTORY SECTION -->
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_1" value="1" min="0" step="1" /></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_1" /></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_1" /></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_1" value="0" step="0.5" /></div>
+                		</div>
+                			
+                	</div>
+                			
+                	<!-- END backpack row 1-->
+                    
+                    <!-- BEGIN backpack row 2-->
+                    <div class="sheet-inventory-row1">
+                    	
+                		<div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">2</div>
+                			<div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable2">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                    </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_2" value="1" min="0" step="1" /></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_2" /></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_2" /></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_2" value="0" step="0.5" /></div>
+                		</div>
+                			
+                	</div>
+                			
+                	<!-- END backpack row 2-->
+                    
+                    <!-- BEGIN backpack row 3-->
+                    <div class="sheet-inventory-row1">
+                        
+                		<div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">3</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_3" value="1" min="0" step="1" /></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_3" /></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_3" /></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_3" value="0" step="0.5" /></div>
+                			
+                	</div>
+                			
+                	<!-- END backpack row 3-->
+                    
+                    <!-- BEGIN backpack row 4-->
+                    <div class="sheet-inventory-row1">
+                        
+                    	<div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">4</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_4" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_4"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_4"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_4" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 4-->
+                    
+                    <!-- BEGIN backpack row 5-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">5</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_5" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_5"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_5"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_5" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 5-->
+                    
+                    <!-- BEGIN backpack row 6-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">6</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_6" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_6"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_6"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_6" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 6-->
+                    
+                    <!-- BEGIN backpack row 7-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">7</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_7" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_7"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_7"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_7" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 7-->
+                    
+                    <!-- BEGIN backpack row 8-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">8</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_8" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_8"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_8"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_8" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 8-->
+                    
+                    <!-- BEGIN backpack row 9-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">9</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_9" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_9"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_9"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_9" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 9-->
+                    
+                    <!-- BEGIN backpack row 10-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">10</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_10" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_10"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_10"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_10" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 10-->
+                    
+                    <!-- BEGIN backpack row 11-->
+                    <div class="sheet-inventory-row1">
+                    	
+                		<div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">11</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable1">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                    </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_11" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_11"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_11"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_11" value="0" step="0.5"></div>
+                		</div>
+                			
+                	</div>
+                			
+                	<!-- END backpack row 11-->
+                    
+                    <!-- BEGIN backpack row 12-->
+                    <div class="sheet-inventory-row1">
+                    	
+                		<div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">12</div>
+                			<div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable2">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                    </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_12" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_12"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_12"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_12" value="0" step="0.5"></div>
+                		</div>
+                			
+                	</div>
+                			
+                	<!-- END backpack row 12-->
+                    
+                    <!-- BEGIN backpack row 13-->
+                    <div class="sheet-inventory-row1">
+                        
+                		<div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">13</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_13" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_13"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_13"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_13" value="0" step="0.5"></div>
+                			
+                	</div>
+                			
+                	<!-- END backpack row 13-->
+                    
+                    <!-- BEGIN backpack row 14-->
+                    <div class="sheet-inventory-row1">
+                        
+                    	<div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">14</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_14" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_14"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_14"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_14" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 14-->
+                    
+                    <!-- BEGIN backpack row 15-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">15</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_15" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_15"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_15"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_15" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 15-->
+                    
+                    <!-- BEGIN backpack row 16-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">16</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_16" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_16"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_16"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_16" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 16-->
+                    
+                    <!-- BEGIN backpack row 17-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">17</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_17" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_17"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_17"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_17" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 17-->
+                    
+                    <!-- BEGIN backpack row 18-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">18</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_18" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_18"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_18"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_18" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 8-->
+                    
+                    <!-- BEGIN backpack row 9-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">19</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_19" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_19"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_19"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_19" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 19-->
+                    
+                    <!-- BEGIN backpack row 20-->
+                    <div class="sheet-inventory-row1">
+                        
+                        <div class="sheet-row sheet-grey-row">
+                			<div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number">20</div>
+                            <div class="sheet-col-1-15" title="Is this itema a consumable?">
+                    <select name="attr_backpack_consumable3">
+                            <option value="is a consumable item.">Yes</option>
+                            <option value="can be used as many times as needed." selected="select">No</option>
+                        </select>
+                        </div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_qty_20" value="1" min="0" step="1"></div>
+                			<div class="sheet-col-4-15"><input type="text" name="attr_backpack_name_20"></div>
+                			<div class="sheet-col-7-15"><input type="text" name="attr_backpack_description_20"></div>
+                            <div class="sheet-col-1-15"><input type="number" name="attr_backpack_weight_20" value="0" step="0.5"></div>
+                			
+                	</div>		
+                	<!-- END backpack row 20-->
+
+                    <div hidden>
+                            <input name="attr_backpack_weight_calc" value="(@{backpack_weight_1} * @{backpack_qty_1}) + (@{backpack_weight_2} * @{backpack_qty_2}) + (@{backpack_weight_3} * @{backpack_qty_3}) + (@{backpack_weight_4} * @{backpack_qty_4}) + (@{backpack_weight_5} * @{backpack_qty_5}) + (@{backpack_weight_6} * @{backpack_qty_6}) + (@{backpack_weight_7} * @{backpack_qty_7}) + (@{backpack_weight_8} * @{backpack_qty_8}) + (@{backpack_weight_9} * @{backpack_qty_9}) + (@{backpack_weight_10} * @{backpack_qty_10}) + (@{backpack_weight_11} * @{backpack_qty_11}) + (@{backpack_weight_12} * @{backpack_qty_12}) + (@{backpack_weight_13} * @{backpack_qty_13}) + (@{backpack_weight_14} * @{backpack_qty_14}) + (@{backpack_weight_15} * @{backpack_qty_15}) + (@{backpack_weight_16} * @{backpack_qty_16}) + (@{backpack_weight_17} * @{backpack_qty_17}) + (@{backpack_weight_18} * @{backpack_qty_18}) + (@{backpack_weight_19} * @{backpack_qty_19}) + (@{backpack_weight_20} * @{backpack_qty_20})" />
+                    </div>
+
+                    <!-- END backpack page -->
+
             </div>
         </div>
     </div>
