@@ -94,7 +94,7 @@
 .charsheet input.sheet-inventorytab4:checked ~ span.sheet-inventorytab4,
 .charsheet input.sheet-inventorytab99:checked ~ span.sheet-inventorytab99
  {
-    background: rgb(0,158,115);    
+    background: #583358;    
     color: white;
 	border-radius: 4px;
 }
@@ -112,7 +112,7 @@
     text-align: center;
     display: inline-block;    
     font-size: 13px;
-	background: rgb(86,180,233); 
+	background: #AF66AF; 
 	color: white;
 	font-weight: bold;
 	border-radius: 4px;
