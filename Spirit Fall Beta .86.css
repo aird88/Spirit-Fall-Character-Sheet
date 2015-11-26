@@ -62,7 +62,10 @@ div[class^="sheet-inventory-page"] {
   display:none
 }
 
-input.sheet-inventorytab1:checked ~ div.sheet-inventory-page1,input.sheet-inventorytab2:checked ~ div.sheet-inventory-page2,input.sheet-inventorytab3:checked ~ div.sheet-inventory-page3,input.sheet-inventorytab4:checked ~ div.sheet-inventory-page4 {
+input.sheet-inventorytab1:checked ~ div.sheet-inventory-page1,
+input.sheet-inventorytab2:checked ~ div.sheet-inventory-page2,
+input.sheet-inventorytab3:checked ~ div.sheet-inventory-page3,
+input.sheet-inventorytab4:checked ~ div.sheet-inventory-page4 {
   display:block
 }
 
@@ -70,7 +73,11 @@ input.sheet-inventorytab99:checked ~ div[class^="sheet-inventory-page"] {
   display:block
 }
 
-input.sheet-inventorytab1:checked ~ span.sheet-inventorytab1,input.sheet-inventorytab2:checked ~ span.sheet-inventorytab2,input.sheet-inventorytab3:checked ~ span.sheet-inventorytab3,input.sheet-inventorytab4:checked ~ span.sheet-inventorytab4,input.sheet-inventorytab99:checked ~ span.sheet-inventorytab99 {
+input.sheet-inventorytab1:checked ~ span.sheet-inventorytab1,
+input.sheet-inventorytab2:checked ~ span.sheet-inventorytab2,
+input.sheet-inventorytab3:checked ~ span.sheet-inventorytab3,
+input.sheet-inventorytab4:checked ~ span.sheet-inventorytab4,
+input.sheet-inventorytab99:checked ~ span.sheet-inventorytab99 {
   background:#583358;
   color:#fff;
   border-radius:4px
