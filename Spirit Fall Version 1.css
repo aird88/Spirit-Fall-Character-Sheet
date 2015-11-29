@@ -3,6 +3,372 @@
   max-width:832px
 }
 
+
+/* Begin Skill Roll Template */
+
+.sheet-rolltemplate-skill table {
+    width: 100%;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    color: black;
+    font-size: 1em;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+
+.sheet-rolltemplate-skill th {
+	background-color: #583358;
+    background-image: -webkit-linear-gradient(top, #000000, #583358);
+    background-image: -moz-linear-gradient(top, #000000, #583358);
+    background-image: -ms-linear-gradient(top, #000000, #583358);
+    background-image: -o-linear-gradient(top, #000000, #583358);
+    background-image: linear-gradient(to bottom, #000000, #583358);
+    color: #ffffff;
+	padding: 2px;
+	line-height: 1.6em;
+	font-size: 1.2em;
+    font-family: Georgia;
+}
+
+.sheet-rolltemplate-skill .userscript-tcat {
+	font-weight: bold;
+}
+
+.sheet-rolltemplate-skill td {
+    color: #ffffff;
+    text-align:center;
+    font-family: Georgia;
+}
+
+.sheet-rolltemplate-skill tr:nth-child(odd) {
+	background-color: #000000;
+    background-image: -webkit-linear-gradient(bottom, #000000, #583358);
+    background-image: -moz-linear-gradient(bottom, #000000, #583358);
+    background-image: -ms-linear-gradient(bottom, #000000, #583358);
+    background-image: -o-linear-gradient(bottom, #000000, #583358);
+    background-image: linear-gradient(to top, #000000, #583358);
+    color: #ffffff;
+    padding: 2px;
+    line-height: 1.6em;
+}
+
+.sheet-rolltemplate-skill tr:nth-child(even) {
+	background-color: #583358;
+    color: #ffffff;
+    line-height: 1.6em;
+}
+.sheet-rolltemplate-skill .inlinerollresult  {
+	display: inline-block;
+    color: #ffffff;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+	min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-skill .inlinerollresult.fullcrit {
+	display: inline-block;
+    color: #DD0000;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-skill .inlinerollresult.fullfail {
+	display: inline-block;
+    color: #12DD00;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-skill .inlinerollresult.importantroll {
+	display: inline-block;
+    color: #007DDD;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+/* End Weapon Attack Roll Template */
+
+/* Begin Ranged Weapon Roll Template */
+
+.sheet-rolltemplate-rangedweapon table {
+    width: 100%;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    color: black;
+	font-size: 1em;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+
+.sheet-rolltemplate-rangedweapon th {
+	background-color: #583358;
+    background-image: -webkit-linear-gradient(top, #000000, #583358);
+    background-image: -moz-linear-gradient(top, #000000, #583358);
+    background-image: -ms-linear-gradient(top, #000000, #583358);
+    background-image: -o-linear-gradient(top, #000000, #583358);
+    background-image: linear-gradient(to bottom, #000000, #583358);
+    color: #ffffff;
+	padding: 2px;
+	line-height: 1.6em;
+	font-size: 1.2em;
+    font-family: Georgia;
+}
+
+.sheet-rolltemplate-rangedweapon .userscript-tcat {
+	font-weight: bold;
+}
+
+.sheet-rolltemplate-rangedweapon td {
+    color: #ffffff;
+    text-align:center;
+    font-family: Georgia;
+}
+
+.sheet-rolltemplate-rangedweapon tr:nth-child(odd) {
+	background-color: #000000;
+    background-image: -webkit-linear-gradient(bottom, #000000, #583358);
+    background-image: -moz-linear-gradient(bottom, #000000, #583358);
+    background-image: -ms-linear-gradient(bottom, #000000, #583358);
+    background-image: -o-linear-gradient(bottom, #000000, #583358);
+    background-image: linear-gradient(to top, #000000, #583358);
+    color: #ffffff;
+    padding: 2px;
+    line-height: 1.6em;
+}
+
+.sheet-rolltemplate-rangedweapon tr:nth-child(even) {
+	background-color: #583358;
+    color: #ffffff;
+    line-height: 1.6em;
+}
+.sheet-rolltemplate-rangedweapon .inlinerollresult  {
+	display: inline-block;
+    color: #ffffff;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+	min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-rangedweapon .inlinerollresult.fullcrit {
+	display: inline-block;
+    color: #DD0000;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-rangedweapon .inlinerollresult.fullfail {
+	display: inline-block;
+    color: #12DD00;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-rangedweapon .inlinerollresult.importantroll {
+	display: inline-block;
+    color: #007DDD;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+/* End Weapon Attack Roll Template */
+
+/* Begin Ranged Weapon Roll Template */
+
+.sheet-rolltemplate-meleeweapon table {
+    width: 100%;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    color: black;
+    font-size: 1em;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+
+.sheet-rolltemplate-meleeweapon th {
+	background-color: #583358;
+    background-image: -webkit-linear-gradient(bottom, #000000, #583358);
+    background-image: -moz-linear-gradient(bottom, #000000, #583358);
+    background-image: -ms-linear-gradient(bottom, #000000, #583358);
+    background-image: -o-linear-gradient(bottom, #000000, #583358);
+    background-image: linear-gradient(to top, #000000, #583358);
+    color: #ffffff;
+	padding: 2px;
+	line-height: 1.6em;
+	font-size: 1.2em;
+    font-family: Georgia;
+}
+
+.sheet-rolltemplate-meleeweapon .userscript-tcat {
+	font-weight: bold;
+}
+
+.sheet-rolltemplate-meleeweapon td {
+    color: #ffffff;
+    text-align:center;
+    font-family: Georgia;
+}
+
+.sheet-rolltemplate-meleeweapon tr:nth-child(odd) {
+	background-color: #000000;
+    background-image: -webkit-linear-gradient(bottom, #000000, #583358);
+    background-image: -moz-linear-gradient(bottom, #000000, #583358);
+    background-image: -ms-linear-gradient(bottom, #000000, #583358);
+    background-image: -o-linear-gradient(bottom, #000000, #583358);
+    background-image: linear-gradient(to top, #000000, #583358);
+    color: #ffffff;
+    padding: 2px;
+    line-height: 1.6em;
+}
+
+.sheet-rolltemplate-meleeweapon tr:nth-child(even) {
+	background-color: #583358;
+    background-image: -webkit-linear-gradient(top, #000000, #583358);
+    background-image: -moz-linear-gradient(top, #000000, #583358);
+    background-image: -ms-linear-gradient(top, #000000, #583358);
+    background-image: -o-linear-gradient(top, #000000, #583358);
+    background-image: linear-gradient(to bottom, #000000, #583358);
+    color: #ffffff;
+    line-height: 1.6em;
+}
+.sheet-rolltemplate-meleeweapon .inlinerollresult  {
+	display: inline-block;
+    color: #ffffff;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+	min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-meleeweapon .inlinerollresult.fullcrit {
+	display: inline-block;
+    color: #DD0000;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-meleeweapon .inlinerollresult.fullfail {
+	display: inline-block;
+    color: #12DD00;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+.sheet-rolltemplate-meleeweapon .inlinerollresult.importantroll {
+	display: inline-block;
+    color: #007DDD;
+    background-color: #583358;
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    min-width: 1.5em;
+	text-align: center;
+    font-size: 2em;
+	border: solid #583358 1px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    cursor:crosshair;
+    position:relative;
+}
+
+/* End Melee Weapon Attack Roll Template */
+
 /* Tweak repeating section buttons so they have a bottom margin and dont overflow when in edit mode. */
 .charsheet div[class^="repcontrol"] {
   margin-bottom:5px
@@ -57,15 +423,58 @@
 }
 
 /* END Main sheet tabs */
+
+/* Begin Weapon Sheet Tabs */
+.charsheet div[class^="sheet-weapons-mag"] {
+  display:none
+}
+
+.charsheet input.sheet-weaponstab1:checked ~ div.sheet-weapons-mag1,.charsheet input.sheet-weaponstab2:checked ~ div.sheet-weapons-mag2,.charsheet input.sheet-weaponstab3:checked ~ div.sheet-weapons-mag3,.charsheet input.sheet-weaponstab4:checked ~ div.sheet-weapons-mag4,.charsheet input.sheet-weaponstab5:checked ~ div.sheet-weapons-mag5,.charsheet input.sheet-weaponstab6:checked ~ div.sheet-weapons-mag6,.charsheet input.sheet-weaponstab7:checked ~ div.sheet-weapons-mag7,.charsheet input.sheet-weaponstab8:checked ~ div.sheet-weapons-mag8,.charsheet input.sheet-weaponstab9:checked ~ div.sheet-weapons-mag9,.charsheet input.sheet-weaponstab10:checked ~ div.sheet-weapons-mag10 {
+  display:block
+}
+
+.charsheet input.sheet-weaponstab99:checked ~ div[class^="sheet-weapons-mag"] {
+  display:block
+}
+
+.charsheet input.sheet-weaponstab {
+  width:155px;
+  height:20px;
+  cursor:pointer;
+  position:relative;
+  opacity:0;
+  z-index:9999
+}
+
+.charsheet span.sheet-weaponstab {
+  text-align:center;
+  display:inline-block;
+  font-size:13px;
+  background:#AF66AF;
+  color:#fff;
+  font-weight:700;
+  border-radius:4px;
+  width:155px;
+  height:20px;
+  cursor:pointer;
+  position:relative;
+  margin-left:-158px
+}
+
+.charsheet input.sheet-weaponstab1:checked + span.sheet-weaponstab1,.charsheet input.sheet-weaponstab2:checked + span.sheet-weaponstab2,.charsheet input.sheet-weaponstab3:checked + span.sheet-weaponstab3,.charsheet input.sheet-weaponstab4:checked + span.sheet-weaponstab4,.charsheet input.sheet-weaponstab5:checked + span.sheet-weaponstab5,.charsheet input.sheet-weaponstab6:checked + span.sheet-weaponstab6,.charsheet input.sheet-weaponstab7:checked + span.sheet-weaponstab7,.charsheet input.sheet-weaponstab8:checked + span.sheet-weaponstab8,.charsheet input.sheet-weaponstab9:checked + span.sheet-weaponstab9,.charsheet input.sheet-weaponstab10:checked + span.sheet-weaponstab10,.charsheet input.sheet-weaponstab99:checked + span.sheet-weaponstab99 {
+  background:#583358;
+  color:#fff;
+  border-radius:4px
+}
+
+/* END Weapon sheet tabs */
+
 /* Inventory Page Settings */
 div[class^="sheet-inventory-page"] {
   display:none
 }
 
-input.sheet-inventorytab1:checked ~ div.sheet-inventory-page1,
-input.sheet-inventorytab2:checked ~ div.sheet-inventory-page2,
-input.sheet-inventorytab3:checked ~ div.sheet-inventory-page3,
-input.sheet-inventorytab4:checked ~ div.sheet-inventory-page4 {
+input.sheet-inventorytab1:checked ~ div.sheet-inventory-page1,input.sheet-inventorytab2:checked ~ div.sheet-inventory-page2,input.sheet-inventorytab3:checked ~ div.sheet-inventory-page3,input.sheet-inventorytab4:checked ~ div.sheet-inventory-page4 {
   display:block
 }
 
@@ -73,11 +482,7 @@ input.sheet-inventorytab99:checked ~ div[class^="sheet-inventory-page"] {
   display:block
 }
 
-input.sheet-inventorytab1:checked ~ span.sheet-inventorytab1,
-input.sheet-inventorytab2:checked ~ span.sheet-inventorytab2,
-input.sheet-inventorytab3:checked ~ span.sheet-inventorytab3,
-input.sheet-inventorytab4:checked ~ span.sheet-inventorytab4,
-input.sheet-inventorytab99:checked ~ span.sheet-inventorytab99 {
+input.sheet-inventorytab1:checked ~ span.sheet-inventorytab1,input.sheet-inventorytab2:checked ~ span.sheet-inventorytab2,input.sheet-inventorytab3:checked ~ span.sheet-inventorytab3,input.sheet-inventorytab4:checked ~ span.sheet-inventorytab4,input.sheet-inventorytab99:checked ~ span.sheet-inventorytab99 {
   background:#583358;
   color:#fff;
   border-radius:4px
@@ -113,7 +518,7 @@ span.sheet-inventorytab {
   font-size:12px
 }
 
-.charsheet .sheet-spell-row-number,.charsheet .sheet-inventory-row-number {
+.charsheet .sheet-inventory-row-number {
   text-align:center;
   font-weight:700
 }
@@ -229,8 +634,35 @@ span.sheet-inventorytab {
   box-shadow:0 -2px 0 0 #000 inset
 }
 
-.charsheet button.sheet-core-save,.charsheet button.sheet-core-check,.charsheet button.sheet-initiative,.charsheet button.sheet-roll {
-  font-size:12px!important
+.charsheet button.sheet-roll {
+  background: #AF66AF;
+  background-image: -webkit-linear-gradient(top, #AF66AF, #583358);
+  background-image: -moz-linear-gradient(top, #AF66AF, #583358);
+  background-image: -ms-linear-gradient(top, #AF66AF, #583358);
+  background-image: -o-linear-gradient(top, #AF66AF, #583358);
+  background-image: linear-gradient(to bottom, #AF66AF, #583358);
+  -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 60px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  cursor:crosshair;
+  position:relative;
+  text-decoration: none;
+}
+
+.charsheet button.sheet-roll:hover {
+  background: #583358;
+  background-image: -webkit-linear-gradient(top, #583358, #AF66AF);
+  background-image: -moz-linear-gradient(top, #583358, #AF66AF);
+  background-image: -ms-linear-gradient(top, #583358, #AF66AF);
+  background-image: -o-linear-gradient(top, #583358, #AF66AF);
+  background-image: linear-gradient(to bottom, #583358, #AF66AF);
+  text-decoration: none;
+  cursor:crosshair;
+  position:relative;
 }
 
 .charsheet button.sheet-initiative {
@@ -307,7 +739,6 @@ span.sheet-inventorytab {
   background-image:-ms-repeating-radial-gradient(center center,circle cover,#000,#583358 100%);
   background-image:repeating-radial-gradient(center center,circle cover,#000,#583358 100%);
   margin-top:10px;
-  border-radius:12px
 }
 
 .charsheet h4 {
@@ -362,7 +793,6 @@ span.sheet-inventorytab {
 .charsheet .sheet-sub-header {
   background-color:#cecece;
   vertical-align:bottom;
-  border-radius:12px;
   margin-bottom:3px
 }
 
@@ -434,14 +864,14 @@ span.sheet-inventorytab {
 }
 
 /* Skill Roll Template */
-.sheet-rolltemplate-UseSkill table {
+.sheet-rolltemplate-useskill table {
   width:189px;
   padding:2px;
   border:1px solid;
   background-color:#fff
 }
 
-.sheet-rolltemplate-UseSkill th {
+.sheet-rolltemplate-useskill th {
   color:#7e2d40;
   padding-left:5px;
   line-height:1.6em;
@@ -451,100 +881,42 @@ span.sheet-inventorytab {
   font-variant:small-caps
 }
 
-.sheet-rolltemplate-UseSkill .sheet-subheader {
+.sheet-rolltemplate-useskill .sheet-subheader {
   color:#000;
   font-size:1em;
   font-style:italic
 }
 
-.sheet-rolltemplate-UseSkill .sheet-arrow-right {
+.sheet-rolltemplate-useskill .sheet-arrow-right {
   border-top:3px solid transparent;
   border-bottom:3px solid transparent;
   border-left:180px solid #7e2d40
 }
 
-.sheet-rolltemplate-UseSkill .sheet-tcat {
+.sheet-rolltemplate-useskill .sheet-tcat {
   font-style:italic
 }
 
-.sheet-rolltemplate-UseSkill td {
+.sheet-rolltemplate-useskill td {
   padding-left:5px
 }
 
-.sheet-rolltemplate-UseSkill .inlinerollresult {
+.sheet-rolltemplate-useskill .inlinerollresult {
   background-color:#fff;
   border:none
 }
 
-.sheet-rolltemplate-UseSkill .inlinerollresult.fullcrit {
+.sheet-rolltemplate-useskill .inlinerollresult.fullcrit {
   color:#3FB315;
   border:none
 }
 
-.sheet-rolltemplate-UseSkill .inlinerollresult.fullfail {
+.sheet-rolltemplate-useskill .inlinerollresult.fullfail {
   color:#B31515;
   border:none
 }
 
-.sheet-rolltemplate-UseSkill .inlinerollresult.importantroll {
-  color:#4A57ED;
-  border:none
-}
-
-/* Attack Roll Template */
-.sheet-rolltemplate-UseSkill table {
-  width:189px;
-  padding:2px;
-  border:1px solid;
-  background-color:#fff
-}
-
-.sheet-rolltemplate-UseSkill th {
-  color:#7e2d40;
-  padding-left:5px;
-  line-height:1.6em;
-  font-size:1.2em;
-  text-align:left;
-  font-family:"Times New Roman",Times,serif;
-  font-variant:small-caps
-}
-
-.sheet-rolltemplate-UseSkill .sheet-subheader {
-  color:#000;
-  font-size:1em;
-  font-style:italic
-}
-
-.sheet-rolltemplate-UseSkill .sheet-arrow-right {
-  border-top:3px solid transparent;
-  border-bottom:3px solid transparent;
-  border-left:180px solid #7e2d40
-}
-
-.sheet-rolltemplate-UseSkill .sheet-tcat {
-  font-style:italic
-}
-
-.sheet-rolltemplate-UseSkill td {
-  padding-left:5px
-}
-
-.sheet-rolltemplate-UseSkill .inlinerollresult {
-  background-color:#fff;
-  border:none
-}
-
-.sheet-rolltemplate-UseSkill .inlinerollresult.fullcrit {
-  color:#3FB315;
-  border:none
-}
-
-.sheet-rolltemplate-UseSkill .inlinerollresult.fullfail {
-  color:#B31515;
-  border:none
-}
-
-.sheet-rolltemplate-UseSkill .inlinerollresult.importantroll {
+.sheet-rolltemplate-useskill .inlinerollresult.importantroll {
   color:#4A57ED;
   border:none
 }
