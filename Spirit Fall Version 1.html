@@ -10,7 +10,7 @@
 
 
         <div class="sheet-col-1-4 sheet-center sheet-margin-top">
-          <p class="sheet-last-updated">Beta Version .86 -- 26 November 2015<br>
+          <p class="sheet-last-updated">Sheet Version 1 -- 28 November 2015<br>
           Aaron Davis</p>
         </div>
 
@@ -23,7 +23,7 @@
 
 
         <div class="sheet-col-1-4 sheet-center sheet-margin-top">
-          <p class="sheet-last-updated">Beta Version .2 -- 27 August 2015<br>
+          <p class="sheet-last-updated">Game Version .2 -- 27 August 2015<br>
           Fahad Syed</p>
         </div>
       </div>
@@ -76,8 +76,7 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{strength}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_strength" value="&{template:skill} {{skillname=Strength}} {{skillroll=[[ d100cs>[[@{strength}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
 
@@ -106,8 +105,7 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{agility}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_agility" value="&{template:skill} {{skillname=Agility}} {{skillroll=[[ d100cs>[[@{agility}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
 
@@ -136,8 +134,7 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{endurance}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_endurance" value="&{template:skill} {{skillname=Endurance}} {{skillroll=[[ d100cs>[[@{endurance}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
 
@@ -166,8 +163,7 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{willpower}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_willpower" value="&{template:skill} {{skillname=Willpower}} {{skillroll=[[ d100cs>[[@{willpower}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
 
@@ -196,8 +192,7 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{intelligence}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_intelligence" value="&{template:skill} {{skillname=Intelligence}} {{skillroll=[[ d100cs>[[@{intelligence}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
 
@@ -226,8 +221,7 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{charisma}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_charisma" value="&{template:skill} {{skillname=Charisma}} {{skillroll=[[ d100cs>[[@{charisma}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
           </div>
@@ -235,12 +229,12 @@
           <!-- Begin states column -->
 
 
-          <div class="sheet-col-1-3 sheet-padr">
+          <div class="sheet-col-5-12 sheet-padr">
             <h3 class="sheet-center">States</h3>
 
 
             <div class="sheet-row sheet-padb">
-              <div class="sheet-col-2-5 sheet-core-stat-label">
+              <div class="sheet-col-1-3 sheet-core-stat-label">
                 Vitality
               </div>
 
@@ -270,14 +264,13 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{vitalitymax}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_vitality" value="&{template:skill} {{skillname=Vitality}} {{skillroll=[[ d100cs>[[@{vitalitymax}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
 
 
             <div class="sheet-row sheet-padb">
-              <div class="sheet-col-2-5 sheet-core-stat-label">
+              <div class="sheet-col-1-3 sheet-core-stat-label">
                 Sanity
               </div>
 
@@ -307,14 +300,13 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{sanitymax}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_sanity" value="&{template:skill} {{skillname=Sanity}} {{skillroll=[[ d100cs>[[@{sanitymax}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
 
 
             <div class="sheet-row sheet-padb">
-              <div class="sheet-col-2-5 sheet-core-stat-label">
+              <div class="sheet-col-1-3 sheet-core-stat-label">
                 Faith
               </div>
 
@@ -344,14 +336,13 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{faithmax}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_faith" value="&{template:skill} {{skillname=Faith}} {{skillroll=[[ d100cs>[[@{faithmax}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
 
 
             <div class="sheet-row sheet-padb">
-              <div class="sheet-col-2-5 sheet-core-stat-label">
+              <div class="sheet-col-1-3 sheet-core-stat-label">
                 Composure
               </div>
 
@@ -381,8 +372,7 @@
 
 
               <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{composuremax}}]]"></button>
+                <button type="roll" class="sheet-roll" name="roll_composure" value="&{template:skill} {{skillname=Composure}} {{skillroll=[[ d100cs>[[@{composuremax}]]cf<5 ]]}}">Roll</button>
               </div>
             </div>
           </div>
@@ -390,7 +380,7 @@
           <!-- Begin miscellaneous column -->
 
 
-          <div class="sheet-col-1-3 sheet-padr">
+          <div class="sheet-col-1-4 sheet-padr">
             <!-- Begin defense section -->
 
 
@@ -399,12 +389,12 @@
 
             <div class="sheet-row sheet-padb">
               <div class="sheet-row">
-                <div class="sheet-col-1-2 sheet-core-stat-label">
+                <div class="sheet-col-2-3 sheet-core-stat-label">
                   DMG Blocked
                 </div>
 
 
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
 
@@ -416,19 +406,19 @@
 
 
               <div class="sheet-row">
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
               </div>
 
 
               <div class="sheet-row">
-                <div class="sheet-col-1-2 sheet-core-stat-label">
+                <div class="sheet-col-2-3 sheet-core-stat-label">
                   DMG Resisted
                 </div>
 
 
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
 
@@ -447,12 +437,12 @@
 
             <div class="sheet-row sheet-padb">
               <div class="sheet-row">
-                <div class="sheet-col-1-2 sheet-core-stat-label">
+                <div class="sheet-col-2-3 sheet-core-stat-label">
                   Hard Level
                 </div>
 
 
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
 
@@ -464,19 +454,19 @@
 
 
               <div class="sheet-row">
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
               </div>
 
 
               <div class="sheet-row">
-                <div class="sheet-col-1-2 sheet-core-stat-label">
+                <div class="sheet-col-2-3 sheet-core-stat-label">
                   Carry Max
                 </div>
 
 
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
 
@@ -489,19 +479,19 @@
 
 
               <div class="sheet-row">
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
               </div>
 
 
               <div class="sheet-row">
-                <div class="sheet-col-1-2 sheet-core-stat-label">
+                <div class="sheet-col-2-3 sheet-core-stat-label">
                   Encumberance
                 </div>
 
 
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
 
@@ -515,19 +505,19 @@
 
 
               <div class="sheet-row">
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
               </div>
 
 
               <div class="sheet-row">
-                <div class="sheet-col-1-2 sheet-core-stat-label">
+                <div class="sheet-col-2-3 sheet-core-stat-label">
                   Metro Tickets
                 </div>
 
 
-                <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                <div class="sheet-col-1-24 sheet-center sheet-small-label">
                   &nbsp;
                 </div>
 
@@ -539,19 +529,19 @@
 
 
                 <div class="sheet-row">
-                  <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                  <div class="sheet-col-1-24 sheet-center sheet-small-label">
                     &nbsp;
                   </div>
                 </div>
 
 
                 <div class="sheet-row">
-                  <div class="sheet-col-1-2 sheet-core-stat-label">
+                  <div class="sheet-col-2-3 sheet-core-stat-label">
                     Reaction Time
                   </div>
 
 
-                  <div class="sheet-col-1-12 sheet-center sheet-small-label">
+                  <div class="sheet-col-1-24 sheet-center sheet-small-label">
                     &nbsp;
                   </div>
 
@@ -664,6 +654,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -699,13 +694,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_climb" value="&{template:skill} {{skillname=Climb}} {{skillroll=[[ d100cs>[[@{climb}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Climb
               </div>
@@ -726,7 +724,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_climb" type="number" value=
-                "@{climb_points}+@{climb_base}">
+                "@{climb_points}+@{climb_base}+@{global_mod}">
               </div>
 
 
@@ -741,14 +739,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{climb_points}+@{climb_base}+@{global_mod}]]"></button>
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_sprint" value="&{template:skill} {{skillname=Sprint}} {{skillroll=[[ d100cs>[[@{sprint}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Sprint
               </div>
@@ -769,7 +769,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_sprint" type="number" value=
-                "@{sprint_points}+@{sprint_base}">
+                "@{sprint_points}+@{sprint_base}+@{global_mod}">
               </div>
 
 
@@ -785,15 +785,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{sprint_points}+@{sprint_base}+@{global_mod}]]">
-                </button>
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_acrobatic" value="&{template:skill} {{skillname=Acrobatics Maneuver}} {{skillroll=[[ d100cs>[[@{acrobatic}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Acrobatic Maneuver
               </div>
@@ -814,7 +815,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_acrobatic" type="number" value=
-                "@{acrobatic_points}+@{acrobatic_base}">
+                "@{acrobatic_points}+@{acrobatic_base}+@{global_mod}">
               </div>
 
 
@@ -830,11 +831,7 @@
               </div>
 
 
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{acrobatic_points}+@{acrobatic_base}+@{global_mod}]]">
-                </button>
-              </div>
+              
             </div>
             <!-- End acrobatics section -->
             <!-- Begin combat section -->
@@ -844,6 +841,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -879,13 +881,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_throw" value="&{template:skill} {{skillname=Throw}} {{skillroll=[[ d100cs>[[@{throw}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Throw
               </div>
@@ -906,7 +911,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_throw" type="number" value=
-                "@{throw_points}+@{throw_base}">
+                "@{throw_points}+@{throw_base}+@{global_mod}">
               </div>
 
 
@@ -921,14 +926,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{throw_points}+@{throw_base}+@{global_mod}]]"></button>
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_firearm" value="&{template:skill} {{skillname=Use Firearm}} {{skillroll=[[ d100cs>[[@{firearm}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Use Firearm
               </div>
@@ -949,7 +956,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_firearm" type="number" value=
-                "@{firearm_points}+@{firearm_base}">
+                "@{firearm_points}+@{firearm_base}+@{global_mod}">
               </div>
 
 
@@ -963,17 +970,15 @@
                 <input name="attr_firearm_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{firearm_points}+@{firearm_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_melee" value="&{template:skill} {{skillname=Use Melee}} {{skillroll=[[ d100cs>[[@{melee}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Melee Weapon
               </div>
@@ -994,7 +999,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_melee" type="number" value=
-                "@{melee_points}+@{melee_base}">
+                "@{melee_points}+@{melee_base}+@{global_mod}">
               </div>
 
 
@@ -1007,16 +1012,15 @@
               <div class="sheet-col-1-9">
                 <input name="attr_melee_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{melee_points}+@{melee_base}+@{global_mod}]]"></button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_precision" value="&{template:skill} {{skillname=Use Precision Weapon}} {{skillroll=[[ d100cs>[[@{precision}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Use Precision Weapon
               </div>
@@ -1037,7 +1041,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_precision" type="number" value=
-                "@{precision_points}+@{precision_base}">
+                "@{precision_points}+@{precision_base}+@{global_mod}">
               </div>
 
 
@@ -1051,17 +1055,15 @@
                 <input name="attr_precision_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{precision_points}+@{precision_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_unorthodox" value="&{template:skill} {{skillname=Use Unorthodox Weapon}} {{skillroll=[[ d100cs>[[@{unorthodox}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Unorthodox Weapon
               </div>
@@ -1082,7 +1084,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_unorthodox" type="number" value=
-                "@{unorthodox_points}+@{unorthodox_base}">
+                "@{unorthodox_points}+@{unorthodox_base}+@{global_mod}">
               </div>
 
 
@@ -1096,17 +1098,15 @@
                 <input name="attr_unorthodox_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{unorthodox_points}+@{unorthodox_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_demolitions" value="&{template:skill} {{skillname=Demolitions}} {{skillroll=[[ d100cs>[[@{demolitions}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Demolitions
               </div>
@@ -1127,7 +1127,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_demolitions" type="number" value=
-                "@{demolitions_points}+@{demolitions_base}">
+                "@{demolitions_points}+@{demolitions_base}+@{global_mod}">
               </div>
 
 
@@ -1141,17 +1141,15 @@
                 <input name="attr_demolitions_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{demolitions_points}+@{demolitions_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_handtohand" value="&{template:skill} {{skillname=Use Hand to Hand}} {{skillroll=[[ d100cs>[[@{handtohand}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Use Hand to Hand
               </div>
@@ -1172,7 +1170,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_handtohand" type="number" value=
-                "@{handtohand_points}+@{handtohand_base}">
+                "@{handtohand_points}+@{handtohand_base}+@{global_mod}">
               </div>
 
 
@@ -1186,13 +1184,6 @@
                 <input name="attr_handtohand_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{handtohand_points}+@{handtohand_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
             <!-- End combats section -->
             <!-- Begin diplomacy section -->
@@ -1202,6 +1193,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -1237,13 +1233,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_intimidate" value="&{template:skill} {{skillname=Intimidate}} {{skillroll=[[ d100cs>[[@{intimidate}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Intimidate
               </div>
@@ -1264,7 +1263,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_intimidate" type="number" value=
-                "@{intimidate_points}+@{intimidate_base}">
+                "@{intimidate_points}+@{intimidate_base}+@{global_mod}">
               </div>
 
 
@@ -1278,17 +1277,15 @@
                 <input name="attr_intimidate_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{intimidate_points}+@{intimidate_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_barter" value="&{template:skill} {{skillname=Barter}} {{skillroll=[[ d100cs>[[@{barter}]]cf<5 ]]}}"></button>
+              </div>
+                
               <div class="sheet-col-7-22 sheet-skill-name">
                 Barter
               </div>
@@ -1309,7 +1306,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_barter" type="number" value=
-                "@{barter_points}+@{barter_base}">
+                "@{barter_points}+@{barter_base}+@{global_mod}">
               </div>
 
 
@@ -1323,17 +1320,15 @@
                 <input name="attr_barter_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{barter_points}+@{barter_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_interrogate" value="&{template:skill} {{skillname=Interrogate}} {{skillroll=[[ d100cs>[[@{interrogate}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Interrogate
               </div>
@@ -1354,7 +1349,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_interrogate" type="number" value=
-                "@{interrogate_points}+@{interrogate_base}">
+                "@{interrogate_points}+@{interrogate_base}+@{global_mod}">
               </div>
 
 
@@ -1368,17 +1363,15 @@
                 <input name="attr_interrogate_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{interrogate_points}+@{interrogate_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_deception" value="&{template:skill} {{skillname=Deception}} {{skillroll=[[ d100cs>[[@{deception}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Deception
               </div>
@@ -1399,7 +1392,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_deception" type="number" value=
-                "@{deception_points}+@{deception_base}">
+                "@{deception_points}+@{deception_base}+@{global_mod}">
               </div>
 
 
@@ -1413,17 +1406,15 @@
                 <input name="attr_deception_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{deception_points}+@{deception_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_negotiate" value="&{template:skill} {{skillname=Negotiate}} {{skillroll=[[ d100cs>[[@{negotiate}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Negotiate
               </div>
@@ -1444,7 +1435,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_negotiate" type="number" value=
-                "@{negotiate_points}+@{negotiate_base}">
+                "@{negotiate_points}+@{negotiate_base}+@{global_mod}">
               </div>
 
 
@@ -1458,13 +1449,6 @@
                 <input name="attr_negotiate_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{negotiate_points}+@{negotiate_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
             <!-- End diplomacy section -->
             <!-- Begin engineering section -->
@@ -1474,6 +1458,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -1509,13 +1498,15 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_mechanical" value="&{template:skill} {{skillname=Mechanical Construction}} {{skillroll=[[ d100cs>[[@{mechanical}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Mechanical Construction
               </div>
@@ -1536,7 +1527,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_mechanical" type="number" value=
-                "@{mechanical_points}+@{mechanical_base}">
+                "@{mechanical_points}+@{mechanical_base}+@{global_mod}">
               </div>
 
 
@@ -1550,17 +1541,15 @@
                 <input name="attr_mechanical_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{mechanical_points}+@{mechanical_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_electrical" value="&{template:skill} {{skillname=Electrical Construction}} {{skillroll=[[ d100cs>[[@{electrical}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Electrical Construction
               </div>
@@ -1581,7 +1570,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_electrical" type="number" value=
-                "@{electrical_points}+@{electrical_base}">
+                "@{electrical_points}+@{electrical_base}+@{global_mod}">
               </div>
 
 
@@ -1595,17 +1584,15 @@
                 <input name="attr_electrical_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{electrical_points}+@{electrical_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_omni_construct" value="&{template:skill} {{skillname=Omni-Utilium Construction}} {{skillroll=[[ d100cs>[[@{omni_construct}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Omni Util Construction
               </div>
@@ -1626,7 +1613,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_omni_construct" type="number" value=
-                "@{omni_construct_points}+@{omni_construct_base}">
+                "@{omni_construct_points}+@{omni_construct_base}+@{global_mod}">
               </div>
 
 
@@ -1640,17 +1627,15 @@
                 <input name="attr_omni_construct_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{omni_construct_points}+@{omni_construct_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_structural" value="&{template:skill} {{skillname=Structural Construction}} {{skillroll=[[ d100cs>[[@{structural}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Structural Construction
               </div>
@@ -1671,7 +1656,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_structural" type="number" value=
-                "@{structural_points}+@{structural_base}">
+                "@{structural_points}+@{structural_base}+@{global_mod}">
               </div>
 
 
@@ -1685,17 +1670,15 @@
                 <input name="attr_structural_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{structural_points}+@{structural_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_programming" value="&{template:skill} {{skillname=Programming}} {{skillroll=[[ d100cs>[[@{programming}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Programming
               </div>
@@ -1716,7 +1699,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_programming" type="number" value=
-                "@{programming_points}+@{programming_base}">
+                "@{programming_points}+@{programming_base}+@{global_mod}">
               </div>
 
 
@@ -1730,17 +1713,15 @@
                 <input name="attr_programming_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{programming_points}+@{programming_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_tool" value="&{template:skill} {{skillname=Use Tool}} {{skillroll=[[ d100cs>[[@{tool}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Use Tool
               </div>
@@ -1761,7 +1742,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_tool" type="number" value=
-                "@{tool_points}+@{tool_base}">
+                "@{tool_points}+@{tool_base}+@{global_mod}">
               </div>
 
 
@@ -1774,12 +1755,6 @@
               <div class="sheet-col-1-9">
                 <input name="attr_tool_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{tool_points}+@{tool_base}+@{global_mod}]]"></button>
-              </div>
             </div>
             <!-- End engineering section -->
 
@@ -1788,6 +1763,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -1823,13 +1803,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_history" value="&{template:skill} {{skillname=History}} {{skillroll=[[ d100cs>[[@{history}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 History
               </div>
@@ -1850,7 +1833,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_history" type="number" value=
-                "@{history_points}+@{history_base}">
+                "@{history_points}+@{history_base}+@{global_mod}">
               </div>
 
 
@@ -1864,17 +1847,15 @@
                 <input name="attr_history_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{history_points}+@{history_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_local" value="&{template:skill} {{skillname=Local}} {{skillroll=[[ d100cs>[[@{local}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Local
               </div>
@@ -1895,7 +1876,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_local" type="number" value=
-                "@{local_points}+@{local_base}">
+                "@{local_points}+@{local_base}+@{global_mod}">
               </div>
 
 
@@ -1908,16 +1889,15 @@
               <div class="sheet-col-1-9">
                 <input name="attr_local_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{local_points}+@{local_base}+@{global_mod}]]"></button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_religion" value="&{template:skill} {{skillname=Religion}} {{skillroll=[[ d100cs>[[@{religion}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Religion
               </div>
@@ -1938,7 +1918,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_religion" type="number" value=
-                "@{religion_points}+@{religion_base}">
+                "@{religion_points}+@{religion_base}+@{global_mod}">
               </div>
 
 
@@ -1952,17 +1932,15 @@
                 <input name="attr_religion_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{religion_points}+@{religion_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_demonic" value="&{template:skill} {{skillname=Demonic}} {{skillroll=[[ d100cs>[[@{demonic}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Demonic
               </div>
@@ -1983,7 +1961,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_demonic" type="number" value=
-                "@{demonic_points}+@{demonic_base}">
+                "@{demonic_points}+@{demonic_base}+@{global_mod}">
               </div>
 
 
@@ -1997,17 +1975,15 @@
                 <input name="attr_demonic_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{demonic_points}+@{demonic_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_omni_utilium" value="&{template:skill} {{skillname=Omni-Utilium}} {{skillroll=[[ d100cs>[[@{omni_utilium}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Omni-Utilium
               </div>
@@ -2028,7 +2004,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_omni_utilium" type="number" value=
-                "@{omni_utilium_points}+@{omni_utilium_base}">
+                "@{omni_utilium_points}+@{omni_utilium_base}+@{global_mod}">
               </div>
 
 
@@ -2042,13 +2018,6 @@
                 <input name="attr_omni_utilium_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{omni_utilium_points}+@{omni_utilium_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
             <!-- End knowledge section -->
             <!-- Begin literacy section -->
@@ -2058,6 +2027,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -2093,13 +2067,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_native" value="&{template:skill} {{skillname=Native Literacy}} {{skillroll=[[ d100cs>[[@{native}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Native Literacy
               </div>
@@ -2120,7 +2097,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_native" type="number" value=
-                "@{native_points}+@{native_base}">
+                "@{native_points}+@{native_base}+@{global_mod}">
               </div>
 
 
@@ -2134,17 +2111,15 @@
                 <input name="attr_native_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{native_points}+@{native_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_foreign" value="&{template:skill} {{skillname=Foreign Literacy}} {{skillroll=[[ d100cs>[[@{foreign}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Foreign Literacy
               </div>
@@ -2165,7 +2140,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_foreign" type="number" value=
-                "@{foreign_points}+@{foreign_base}">
+                "@{foreign_points}+@{foreign_base}+@{global_mod}">
               </div>
 
 
@@ -2179,17 +2154,15 @@
                 <input name="attr_foreign_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{foreign_points}+@{foreign_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_decipher" value="&{template:skill} {{skillname=Decipher Demonic}} {{skillroll=[[ d100cs>[[@{decipher}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Decipher Demonic
               </div>
@@ -2210,7 +2183,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_decipher" type="number" value=
-                "@{decipher_points}+@{decipher_base}">
+                "@{decipher_points}+@{decipher_base}+@{global_mod}">
               </div>
 
 
@@ -2224,13 +2197,6 @@
                 <input name="attr_decipher_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{decipher_points}+@{decipher_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
             <!-- End literacy section -->
             <!-- Begin medicine section -->
@@ -2240,6 +2206,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -2275,13 +2246,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_surgery" value="&{template:skill} {{skillname=Surgery}} {{skillroll=[[ d100cs>[[@{surgery}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Surgery
               </div>
@@ -2302,7 +2276,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_surgery" type="number" value=
-                "@{surgery_points}+@{surgery_base}">
+                "@{surgery_points}+@{surgery_base}+@{global_mod}">
               </div>
 
 
@@ -2316,17 +2290,15 @@
                 <input name="attr_surgery_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{surgery_points}+@{surgery_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_pharmacy" value="&{template:skill} {{skillname=Pharmacy}} {{skillroll=[[ d100cs>[[@{pharmacy}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Pharmacy
               </div>
@@ -2347,7 +2319,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_pharmacy" type="number" value=
-                "@{pharmacy_points}+@{psychiatry_base}">
+                "@{pharmacy_points}+@{psychiatry_base}+@{global_mod}">
               </div>
 
 
@@ -2361,17 +2333,15 @@
                 <input name="attr_pharmacy_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{pharmacy_points}+@{pharmacy_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_psychiatry" value="&{template:skill} {{skillname=Psychiatry}} {{skillroll=[[ d100cs>[[@{psychiatry}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Psychiatry
               </div>
@@ -2392,7 +2362,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_psychiatry" type="number" value=
-                "@{psychiatry_points}+@{psychiatry_base}">
+                "@{psychiatry_points}+@{psychiatry_base}+@{global_mod}">
               </div>
 
 
@@ -2406,17 +2376,15 @@
                 <input name="attr_psychiatry_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{psychiatry_points}+@{psychiatry_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_firstaid" value="&{template:skill} {{skillname=First Aid}} {{skillroll=[[ d100cs>[[@{firstaid}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 First Aid
               </div>
@@ -2436,8 +2404,8 @@
 
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
-                name="attr_firstaidr" type="number" value=
-                "@{firstaid_points}+@{firstaid_base}">
+                name="attr_firstaid" type="number" value=
+                "@{firstaid_points}+@{firstaid_base}+@{global_mod}">
               </div>
 
 
@@ -2451,17 +2419,15 @@
                 <input name="attr_firstaid_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{firstaid_points}+@{firstaid_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_diagnose" value="&{template:skill} {{skillname=Diagnose Illness}} {{skillroll=[[ d100cs>[[@{diagnose}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Diagnose Illness
               </div>
@@ -2482,7 +2448,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_diagnose" type="number" value=
-                "@{diagnose_points}+@{diagnose_base}">
+                "@{diagnose_points}+@{diagnose_base}+@{global_mod}">
               </div>
 
 
@@ -2495,13 +2461,6 @@
               <div class="sheet-col-1-9">
                 <input name="attr_diagnose_fail" step="1" type="number" value=
                 "0">
-              </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{diagnose_points}+@{diagnose_base}+@{global_mod}]]">
-                </button>
               </div>
             </div>
             <!-- End medicine section -->
@@ -2518,6 +2477,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -2553,13 +2517,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_instrument" value="&{template:skill} {{skillname=Play Instrument}} {{skillroll=[[ d100cs>[[@{instrument}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Play Instrument
               </div>
@@ -2580,7 +2547,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_instrument" type="number" value=
-                "@{instrument_points}+@{instrument_base}">
+                "@{instrument_points}+@{instrument_base}+@{global_mod}">
               </div>
 
 
@@ -2594,17 +2561,15 @@
                 <input name="attr_instrument_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{instrument_points}+@{instrument_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_drawing" value="&{template:skill} {{skillname=Drawing and Painting}} {{skillroll=[[ d100cs>[[@{drawing}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Drawing & Painting
               </div>
@@ -2625,7 +2590,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_drawing" type="number" value=
-                "@{drawing_points}+@{drawing_base}">
+                "@{drawing_points}+@{drawing_base}+@{global_mod}">
               </div>
 
 
@@ -2639,17 +2604,15 @@
                 <input name="attr_drawing_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{drawing_points}+@{drawing_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_poetry" value="&{template:skill} {{skillname=Poetry}} {{skillroll=[[ d100cs>[[@{poetry}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Poetry
               </div>
@@ -2670,7 +2633,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_poetry" type="number" value=
-                "@{poetry_points}+@{poetry_base}">
+                "@{poetry_points}+@{poetry_base}+@{global_mod}">
               </div>
 
 
@@ -2684,17 +2647,15 @@
                 <input name="attr_poetry_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{poetry_points}+@{poetry_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_culinary" value="&{template:skill} {{skillname=Culinary Art}} {{skillroll=[[ d100cs>[[@{culinary}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Culinary Art
               </div>
@@ -2715,7 +2676,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_culinary" type="number" value=
-                "@{culinary_points}+@{culinary_base}">
+                "@{culinary_points}+@{culinary_base}+@{global_mod}">
               </div>
 
 
@@ -2729,13 +2690,6 @@
                 <input name="attr_culinary_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{culinary_points}+@{culinary_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
             <!-- End old world section -->
             <!-- Begin perception section -->
@@ -2745,6 +2699,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -2780,13 +2739,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_listen" value="&{template:skill} {{skillname=Listen}} {{skillroll=[[ d100cs>[[@{listen}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Listen
               </div>
@@ -2807,7 +2769,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_listen" type="number" value=
-                "@{listen_points}+@{listen_base}">
+                "@{listen_points}+@{listen_base}+@{global_mod}">
               </div>
 
 
@@ -2821,17 +2783,15 @@
                 <input name="attr_listen_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{listen_points}+@{listen_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_spot" value="&{template:skill} {{skillname=Spot}} {{skillroll=[[ d100cs>[[@{spot}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Spot
               </div>
@@ -2852,7 +2812,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_spot" type="number" value=
-                "@{spot_points}+@{spot_base}">
+                "@{spot_points}+@{spot_base}+@{global_mod}">
               </div>
 
 
@@ -2865,16 +2825,15 @@
               <div class="sheet-col-1-9">
                 <input name="attr_spot_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{spot_points}+@{spot_base}+@{global_mod}]]"></button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_smell" value="&{template:skill} {{skillname=Smell}} {{skillroll=[[ d100cs>[[@{smell}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Smell
               </div>
@@ -2895,7 +2854,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_smell" type="number" value=
-                "@{smell_points}+@{smell_base}">
+                "@{smell_points}+@{smell_base}+@{global_mod}">
               </div>
 
 
@@ -2908,12 +2867,6 @@
               <div class="sheet-col-1-9">
                 <input name="attr_smell_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{smell_points}+@{smell_base}+@{global_mod}]]"></button>
-              </div>
             </div>
             <!-- End perception section -->
             <!-- Begin sciences section -->
@@ -2923,6 +2876,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -2958,13 +2916,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_physics" value="&{template:skill} {{skillname=Physics}} {{skillroll=[[ d100cs>[[@{physics}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Physics
               </div>
@@ -2985,7 +2946,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_physics" type="number" value=
-                "@{physics_points}+@{physics_base}">
+                "@{physics_points}+@{physics_base}+@{global_mod}">
               </div>
 
 
@@ -2999,17 +2960,15 @@
                 <input name="attr_physics_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{physics_points}+@{physics_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_omni_mechanics" value="&{template:skill} {{skillname=Onni-Uilium Mechanics}} {{skillroll=[[ d100cs>[[@{omni_mechanics}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Omni-Util. Mechanics
               </div>
@@ -3030,7 +2989,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_omni_mechanics" type="number" value=
-                "@{omni_mechanics_points}+@{omni_mechanics_base}">
+                "@{omni_mechanics_points}+@{omni_mechanics_base}+@{global_mod}">
               </div>
 
 
@@ -3044,17 +3003,15 @@
                 <input name="attr_omni_mechanics_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{omni_mechanics_points}+@{omni_mechanics_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_biology" value="&{template:skill} {{skillname=Biology}} {{skillroll=[[ d100cs>[[@{biology}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Biology
               </div>
@@ -3075,7 +3032,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_biology" type="number" value=
-                "@{biology_points}+@{biology_base}">
+                "@{biology_points}+@{biology_base}+@{global_mod}">
               </div>
 
 
@@ -3089,17 +3046,15 @@
                 <input name="attr_biology_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{biology_points}+@{biology_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_chemistry" value="&{template:skill} {{skillname=Chemistry}} {{skillroll=[[ d100cs>[[@{chemistry}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Chemistry
               </div>
@@ -3120,7 +3075,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_chemistry" type="number" value=
-                "@{chemistry_points}+@{chemistry_base}">
+                "@{chemistry_points}+@{chemistry_base}+@{global_mod}">
               </div>
 
 
@@ -3134,13 +3089,6 @@
                 <input name="attr_chemistry_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{chemistry_points}+@{chemistry_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
             <!-- End sciences section -->
             <!-- Begin stealth section -->
@@ -3150,6 +3098,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+                
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -3185,13 +3138,16 @@
               </div>
 
 
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
+              
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_sneak" value="&{template:skill} {{skillname=Sneak}} {{skillroll=[[ d100cs>[[@{sneak}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Sneak
               </div>
@@ -3212,7 +3168,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_sneak" type="number" value=
-                "@{sneak_points}+@{sneak_base}">
+                "@{sneak_points}+@{sneak_base}+@{global_mod}">
               </div>
 
 
@@ -3225,16 +3181,15 @@
               <div class="sheet-col-1-9">
                 <input name="attr_sneak_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{sneak_points}+@{sneak_base}+@{global_mod}]]"></button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_hide" value="&{template:skill} {{skillname=Hide}} {{skillroll=[[ d100cs>[[@{hide}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Hide
               </div>
@@ -3255,7 +3210,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_hide" type="number" value=
-                "@{hide_points}+@{hide_base}">
+                "@{hide_points}+@{hide_base}+@{global_mod}">
               </div>
 
 
@@ -3268,16 +3223,15 @@
               <div class="sheet-col-1-9">
                 <input name="attr_hide_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{hide_points}+@{hide_base}+@{global_mod}]]"></button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+            <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_disguise" value="&{template:skill} {{skillname=Disguise}} {{skillroll=[[ d100cs>[[@{disguise}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Disguise
               </div>
@@ -3298,7 +3252,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_disguise" type="number" value=
-                "@{disguise_points}+@{disguise_base}">
+                "@{disguise_points}+@{disguise_base}+@{global_mod}">
               </div>
 
 
@@ -3312,17 +3266,15 @@
                 <input name="attr_disguise_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{disguise_points}+@{disguise_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_steal" value="&{template:skill} {{skillname=Steal}} {{skillroll=[[ d100cs>[[@{steal}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Steal
               </div>
@@ -3343,7 +3295,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_steal" type="number" value=
-                "@{steal_points}+@{steal_base}">
+                "@{steal_points}+@{steal_base}+@{global_mod}">
               </div>
 
 
@@ -3356,12 +3308,6 @@
               <div class="sheet-col-1-9">
                 <input name="attr_steal_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{steal_points}+@{steal_base}+@{global_mod}]]"></button>
-              </div>
             </div>
             <!-- End stealth section -->
             <!-- Begin survival section -->
@@ -3371,6 +3317,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -3404,15 +3355,15 @@
               <div class="sheet-col-1-9 sheet-center sheet-small-label">
                 Fail
               </div>
-
-
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_track" value="&{template:skill} {{skillname=Track}} {{skillroll=[[ d100cs>[[@{track}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Track
               </div>
@@ -3433,7 +3384,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_track" type="number" value=
-                "@{track_points}+@{track_base}">
+                "@{track_points}+@{track_base}+@{global_mod}">
               </div>
 
 
@@ -3446,16 +3397,15 @@
               <div class="sheet-col-1-9">
                 <input name="attr_track_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{track_points}+@{track_base}+@{global_mod}]]"></button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_scavenge" value="&{template:skill} {{skillname=Scavenge}} {{skillroll=[[ d100cs>[[@{scavenge}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Scavenge
               </div>
@@ -3476,7 +3426,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_scavenge" type="number" value=
-                "@{scavenge_points}+@{scavenge_base}">
+                "@{scavenge_points}+@{scavenge_base}+@{global_mod}">
               </div>
 
 
@@ -3490,17 +3440,15 @@
                 <input name="attr_scavenge_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{scavenge_points}+@{scavenge_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_cook" value="&{template:skill} {{skillname=Cook}} {{skillroll=[[ d100cs>[[@{cook}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Cook Food
               </div>
@@ -3521,7 +3469,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_cook" type="number" value=
-                "@{cook_points}+@{cook_base}">
+                "@{cook_points}+@{cook_base}+@{global_mod}">
               </div>
 
 
@@ -3534,16 +3482,15 @@
               <div class="sheet-col-1-9">
                 <input name="attr_cook_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{cook_points}+@{cook_base}+@{global_mod}]]"></button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_swim" value="&{template:skill} {{skillname=Swim}} {{skillroll=[[ d100cs>[[@{swim}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Swim
               </div>
@@ -3564,7 +3511,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_swim" type="number" value=
-                "@{swim_points}+@{swim_base}">
+                "@{swim_points}+@{swim_base}+@{global_mod}">
               </div>
 
 
@@ -3577,12 +3524,6 @@
               <div class="sheet-col-1-9">
                 <input name="attr_swim_fail" step="1" type="number" value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{swim_points}+@{swim_base}+@{global_mod}]]"></button>
-              </div>
             </div>
             <!-- End survival section -->
             <!-- Begin technician section -->
@@ -3592,6 +3533,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -3625,15 +3571,15 @@
               <div class="sheet-col-1-9 sheet-center sheet-small-label">
                 Fail
               </div>
-
-
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_drive_car" value="&{template:skill} {{skillname=Drive Car}} {{skillroll=[[ d100cs>[[@{drive car}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Drive Car
               </div>
@@ -3654,7 +3600,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_drive_car" type="number" value=
-                "@{drive_car_points}+@{drive_car_base}">
+                "@{drive_car_points}+@{drive_car_base}+@{global_mod}">
               </div>
 
 
@@ -3668,17 +3614,15 @@
                 <input name="attr_drive_car_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{drive_car_points}+@{drive_car_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_drive_boat" value="&{template:skill} {{skillname=Drive Boat}} {{skillroll=[[ d100cs>[[@{drive_boat}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Drive Boat
               </div>
@@ -3699,7 +3643,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_drive_boat" type="number" value=
-                "@{drive_boat_points}+@{drive_boat_base}">
+                "@{drive_boat_points}+@{drive_boat_base}+@{global_mod}">
               </div>
 
 
@@ -3713,17 +3657,15 @@
                 <input name="attr_drive_boat_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{drive_boat_points}+@{drive_boat_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_pilot_airplane" value="&{template:skill} {{skillname=Pilot Airplane}} {{skillroll=[[ d100cs>[[@{pilot_airplane}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Pilot Airplane
               </div>
@@ -3744,7 +3686,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_pilot_airplane" type="number" value=
-                "@{pilot_airplane_points}+@{pilot_airplane_base}">
+                "@{pilot_airplane_points}+@{pilot_airplane_base}+@{global_mod}">
               </div>
 
 
@@ -3758,17 +3700,15 @@
                 <input name="attr_pilot_airplane_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{pilot_airplane_points}+@{pilot_airplane_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_drive_motorcycle" value="&{template:skill} {{skillname=Drive Motorcycle}} {{skillroll=[[ d100cs>[[@{drive_motorcycle}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Drive Motorcycle
               </div>
@@ -3789,7 +3729,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_drive_motorcycle" type="number" value=
-                "@{drive_motorcycle_points}+@{drive_motorcycle_base}">
+                "@{drive_motorcycle_points}+@{drive_motorcycle_base}+@{global_mod}">
               </div>
 
 
@@ -3803,17 +3743,15 @@
                 <input name="attr_drive_motorcycle_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{drive_motorcycle_points}+@{drive_motorcycle_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_industrial" value="&{template:skill} {{skillname=Use Industrial Machine}} {{skillroll=[[ d100cs>[[@{industrial}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Use Idust. Machine
               </div>
@@ -3834,7 +3772,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_industrial" type="number" value=
-                "@{industrial_points}+@{industrial_base}">
+                "@{industrial_points}+@{industrial_base}+@{global_mod}">
               </div>
 
 
@@ -3848,17 +3786,15 @@
                 <input name="attr_industrial_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{industrial_points}+@{industrial_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_applicance" value="&{template:skill} {{skillname=Use Appliance}} {{skillroll=[[ d100cs>[[@{appliance}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22 sheet-skill-name">
                 Use Appliance
               </div>
@@ -3879,7 +3815,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_appliance" type="number" value=
-                "@{appliance_points}+@{appliance_base}">
+                "@{appliance_points}+@{appliance_base}+@{global_mod}">
               </div>
 
 
@@ -3893,13 +3829,6 @@
                 <input name="attr_appliance_fail" step="1" type="number" value=
                 "0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{appliance_points}+@{appliance_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
             <!-- End technician section -->
             <!-- Begin custom skills section -->
@@ -3909,6 +3838,11 @@
 
 
             <div class="sheet-row sheet-sub-header">
+            
+                <div class="sheet-col-1-9 sheet-center sheet-small-label">
+                Roll
+              </div>
+            
               <div class="sheet-col-1-5 sheet-center sheet-small-label">
                 Skill
               </div>
@@ -3942,15 +3876,15 @@
               <div class="sheet-col-1-9 sheet-center sheet-small-label">
                 Fail
               </div>
-
-
-              <div class="sheet-col-1-9 sheet-center sheet-small-label">
-                Roll
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_custom_skill_1" value="&{template:skill} {{skillname=@{custom_skill_1_name}} {{skillroll=[[ d100cs>[[@{custom_skill_1}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22">
                 <input class="sheet-center" name="attr_custom_skill_1_name"
                 type="text" value="Custom 1">
@@ -3972,7 +3906,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_custom_skill_1" type="number" value=
-                "@{custom_skill_1_points}+@{custom_skill_1_base}">
+                "@{custom_skill_1_points}+@{custom_skill_1_base}+@{global_mod}">
               </div>
 
 
@@ -3986,17 +3920,15 @@
                 <input name="attr_custom_skill_1_fail" step="1" type="number"
                 value="0">
               </div>
-
-
-              <div class="sheet-col-1-9">
-                <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{custom_skill_1_points}+@{custom_skill_1_base}+@{global_mod}]]">
-                </button>
-              </div>
             </div>
 
 
             <div class="sheet-row sheet-skill-row">
+            
+                <div class="sheet-col-1-9">
+                <button type="roll" class="sheet-roll" name="roll_custom_skill_2" value="&{template:skill} {{skillname=@{custom_skill_2_name}} {{skillroll=[[ d100cs>[[@{custom_skill_2}]]cf<5 ]]}}"></button>
+              </div>
+            
               <div class="sheet-col-7-22">
                 <input class="sheet-center" name="attr_custom_skill_2_name"
                 type="text" value="Custom 2">
@@ -4018,7 +3950,7 @@
               <div class="sheet-col-1-9">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_custom_skill_2" type="number" value=
-                "@{custom_skill_2_points}+@{custom_skill_2_base}">
+                "@{custom_skill_2_points}+@{custom_skill_2_base}+@{global_mod}">
               </div>
 
 
@@ -4036,7 +3968,7 @@
 
               <div class="sheet-col-1-9">
                 <button class="btn ui-draggable" type="roll" value=
-                "[[1d100]] VS [[@{custom_skill_2_points}+@{custom_skill_2_base}+@{global_mod}]]">
+                "[[1d100]] VS [[@{custom_skill_2_points}+@{custom_skill_2_base}]]">
                 </button>
               </div>
             </div>
@@ -4065,7 +3997,7 @@
                 <div class="sheet-col-1-9">
                   <input class="sheet-passive-skill-score" disabled="disabled"
                   name="attr_custom_skill_3" type="number" value=
-                  "@{custom_skill_3_points}+@{custom_skill_3_base}">
+                  "@{custom_skill_3_points}+@{custom_skill_3_base}+@{global_mod}">
                 </div>
 
 
@@ -4083,7 +4015,7 @@
 
                 <div class="sheet-col-1-9">
                   <button class="btn ui-draggable" type="roll" value=
-                  "[[1d100]] VS [[@{custom_skill_3_points}+@{custom_skill_3_base}+@{global_mod}]]">
+                  "[[1d100]] VS [[@{custom_skill_3_points}+@{custom_skill_3_base}]]">
                   </button>
                 </div>
               </div>
@@ -4244,6 +4176,12 @@ Fear Description
 
 
         <div class="sheet-row sheet-sub-header">
+        
+            <div class=
+            "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
+            Attack
+            </div>
+        
           <div class=
           "sheet-col-1-6 sheet-center sheet-small-label sheet-vert-bottom">
             Weapon
@@ -4269,25 +4207,25 @@ Fear Description
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
             Damage
           </div>
 
 
           <div class=
-          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
-            Crit
+          "sheet-col-1-16 sheet-center sheet-small-label sheet-vert-bottom">
+            Crit %
           </div>
 
 
           <div class=
-          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
-            Stag
+          "sheet-col-1-16 sheet-center sheet-small-label sheet-vert-bottom">
+            Stag %
           </div>
 
 
           <div class=
-          "sheet-col-1-8 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-4 sheet-center sheet-small-label sheet-vert-bottom">
             Notes
           </div>
         </div>
@@ -4295,6 +4233,11 @@ Fear Description
 
 
         <div class="sheet-row">
+        
+            <div class="sheet-col-1-12">
+                <button type="roll" class="sheet-roll" name="roll_melee1" value="&{template:meleeweapon} {{weaponname=@{meleeweapon1}}} {{weaponskill=[[ d100cs>[[@{melee1}]]cf<[[@{meleecrit1}]] ]]}} {{weapondamage=[[@{meleedamage1}cs>100cf<0*5]]}} {{staggerrange=@{meleestag1}}}">Attack</button>
+            </div>
+            
           <div class="sheet-col-1-6">
             <input name="attr_meleeweapon1" type="text">
           </div>
@@ -4338,61 +4281,26 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-10" title=
-          "What is the damage of the weapon?">
-            <select name="attr_meleedmg1">
-              <option value="1d4*5">
-                1d4 x 5
-              </option>
-
-              <option value="2d4*5">
-                2d4 x 5
-              </option>
-
-              <option value="3d4*5">
-                3d4 x 5
-              </option>
-
-              <option value="4d4*5">
-                4d4 x 5
-              </option>
-            </select>
+          <div class="sheet-col-1-20" title="What is the damage of the weapon?">
+            <input name="attr_meleedamage1" type="text" value="0">
+          </div>
+          
+          <div class="sheet-col-1-24 sheet-margin-top" title="What is the damage of the weapon?">
+            <p> x 5</p>
           </div>
 
 
-          <div class="sheet-col-1-12" title=
-          "What is the chance of a critical hit?">
-            <select name="attr_meleecrit1">
-              <option value="5%">
-                5%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-            </select>
+          <div class="sheet-col-1-16" title="What is the chance of a critical hit?">
+            <input name="attr_meleecrit1" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-12" title=
-          "What is the chance of causing the enemy to stagger?">
-            <select name="attr_meleestag1">
-              <option value="10%">
-                10%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-
-              <option value="20%">
-                20%
-              </option>
-            </select>
+          <div class="sheet-col-1-16" title="What is the chance of causing the enemy to stagger?">
+            <input name="attr_meleestag1" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-5-16">
+          <div class="sheet-col-2-7">
             <input name="attr_meleenotes1" type="text">
           </div>
         </div>
@@ -4401,6 +4309,11 @@ Fear Description
 
 
         <div class="sheet-row">
+        
+            <div class="sheet-col-1-12">
+                <button type="roll" class="sheet-roll" name="roll_melee2" value="&{template:meleeweapon} {{weaponname=@{meleeweapon2}}} {{weaponskill=[[ d100cs>[[@{melee2}]]cf<[[@{meleecrit2}]] ]]}} {{weapondamage=[[@{meleedamage2}cs>100cf<0*5]]}} {{staggerrange=@{meleestag2}}}">Attack</button>
+            </div>
+            
           <div class="sheet-col-1-6">
             <input name="attr_meleeweapon2" type="text">
           </div>
@@ -4439,66 +4352,31 @@ Fear Description
 
           <div class="sheet-col-1-16">
             <input class="sheet-passive-skill-score" disabled="disabled" name=
-            "attr_melee" type="number" value=
-            "@{melee_points}+@{melee_base}+@{meleemod2}">
+            "attr_melee2" type="number" value=
+            "@{melee_points}+@{melee_base}+@{meleemod1}">
           </div>
 
 
-          <div class="sheet-col-1-10" title=
-          "What is the damage of the weapon?">
-            <select name="attr_meleedmg2">
-              <option value="1d4*5">
-                1d4 x 5
-              </option>
-
-              <option value="2d4*5">
-                2d4 x 5
-              </option>
-
-              <option value="3d4*5">
-                3d4 x 5
-              </option>
-
-              <option value="4d4*5">
-                4d4 x 5
-              </option>
-            </select>
+          <div class="sheet-col-1-20" title="What is the damage of the weapon?">
+            <input name="attr_meleedamage2" type="text" value="0">
+          </div>
+          
+          <div class="sheet-col-1-24 sheet-margin-top" title="What is the damage of the weapon?">
+            <p> x 5</p>
           </div>
 
 
-          <div class="sheet-col-1-12" title=
-          "What is the chance of a critical hit?">
-            <select name="attr_meleecrit2">
-              <option value="5%">
-                5%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-            </select>
+          <div class="sheet-col-1-16" title="What is the chance of a critical hit?">
+            <input name="attr_meleecrit2" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-12" title=
-          "What is the chance of causing the enemy to stagger?">
-            <select name="attr_meleestag2">
-              <option value="10%">
-                10%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-
-              <option value="20%">
-                20%
-              </option>
-            </select>
+          <div class="sheet-col-1-16" title="What is the chance of causing the enemy to stagger?">
+            <input name="attr_meleestag2" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-5-16">
+          <div class="sheet-col-2-7">
             <input name="attr_meleenotes2" type="text">
           </div>
         </div>
@@ -4507,6 +4385,11 @@ Fear Description
 
 
         <div class="sheet-row">
+        
+            <div class="sheet-col-1-12">
+                <button type="roll" class="sheet-roll" name="roll_melee3" value="&{template:meleeweapon} {{weaponname=@{meleeweapon3}}} {{weaponskill=[[ d100cs>[[@{melee3}]]cf<[[@{meleecrit3}]] ]]}} {{weapondamage=[[@{meleedamage3}cs>100cf<0*5]]}} {{staggerrange=@{meleestag3}}}">Attack</button>
+            </div>
+            
           <div class="sheet-col-1-6">
             <input name="attr_meleeweapon3" type="text">
           </div>
@@ -4545,66 +4428,31 @@ Fear Description
 
           <div class="sheet-col-1-16">
             <input class="sheet-passive-skill-score" disabled="disabled" name=
-            "attr_melee" type="number" value=
-            "@{melee_points}+@{melee_base}+@{meleemod3}">
+            "attr_melee3" type="number" value=
+            "@{melee_points}+@{melee_base}+@{meleemod1}">
           </div>
 
 
-          <div class="sheet-col-1-10" title=
-          "What is the damage of the weapon?">
-            <select name="attr_meleedmg3">
-              <option value="1d4*5">
-                1d4 x 5
-              </option>
-
-              <option value="2d4*5">
-                2d4 x 5
-              </option>
-
-              <option value="3d4*5">
-                3d4 x 5
-              </option>
-
-              <option value="4d4*5">
-                4d4 x 5
-              </option>
-            </select>
+          <div class="sheet-col-1-20" title="What is the damage of the weapon?">
+            <input name="attr_meleedamage3" type="text" value="0">
+          </div>
+          
+          <div class="sheet-col-1-24 sheet-margin-top" title="What is the damage of the weapon?">
+            <p> x 5</p>
           </div>
 
 
-          <div class="sheet-col-1-12" title=
-          "What is the chance of a critical hit?">
-            <select name="attr_meleecrit3">
-              <option value="5%">
-                5%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-            </select>
+          <div class="sheet-col-1-16" title="What is the chance of a critical hit?">
+            <input name="attr_meleecrit3" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-12" title=
-          "What is the chance of causing the enemy to stagger?">
-            <select name="attr_meleestag3">
-              <option value="10%">
-                10%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-
-              <option value="20%">
-                20%
-              </option>
-            </select>
+          <div class="sheet-col-1-16" title="What is the chance of causing the enemy to stagger?">
+            <input name="attr_meleestag3" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-5-16">
+          <div class="sheet-col-2-7">
             <input name="attr_meleenotes3" type="text">
           </div>
         </div>
@@ -4613,6 +4461,11 @@ Fear Description
 
 
         <div class="sheet-row">
+        
+            <div class="sheet-col-1-12">
+                <button type="roll" class="sheet-roll" name="roll_melee4" value="&{template:meleeweapon} {{weaponname=@{meleeweapon4}}} {{weaponskill=[[ d100cs>[[@{melee4}]]cf<[[@{meleecrit4}]] ]]}} {{weapondamage=[[@{meleedamage4}cs>100cf<0*5]]}} {{staggerrange=@{meleestag4}}}">Attack</button>
+            </div>
+            
           <div class="sheet-col-1-6">
             <input name="attr_meleeweapon4" type="text">
           </div>
@@ -4651,35 +4504,36 @@ Fear Description
 
           <div class="sheet-col-1-16">
             <input class="sheet-passive-skill-score" disabled="disabled" name=
-            "attr_melee" type="number" value=
-            "@{melee_points}+@{melee_base}+@{meleemod4}">
+            "attr_melee4" type="number" value=
+            "@{melee_points}+@{melee_base}+@{meleemod1}">
           </div>
 
 
-          <div class="sheet-col-1-10" title=
-          "What is the damage of the weapon?">
-            <input name="attr_meleedmg4" type="text">
+          <div class="sheet-col-1-20" title="What is the damage of the weapon?">
+            <input name="attr_meleedamage4" type="text" value="0">
+          </div>
+          
+          <div class="sheet-col-1-24 sheet-margin-top" title="What is the damage of the weapon?">
+            <p> x 5</p>
           </div>
 
 
-          <div class="sheet-col-1-12" title=
-          "What is the chance of a critical hit?">
+          <div class="sheet-col-1-16" title="What is the chance of a critical hit?">
             <input name="attr_meleecrit4" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-12" title=
-          "What is the chance of causing the enemy to stagger?">
+          <div class="sheet-col-1-16" title="What is the chance of causing the enemy to stagger?">
             <input name="attr_meleestag4" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-5-16">
+          <div class="sheet-col-2-7">
             <input name="attr_meleenotes4" type="text">
           </div>
         </div>
-        <!-- END melee weapon row -->
-        <!-- Begin ranged weapon section -->
+        <!-- END melee weapon 4 row -->
+        <!-- Begin ranged weapon 1 section -->
 
 
         <h3 class="sheet-center">Ranged Weapons</h3>
@@ -4689,6 +4543,12 @@ Fear Description
 
 
         <div class="sheet-row sheet-sub-header">
+          
+          <div class=
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
+            Fire
+          </div>
+          
           <div class=
           "sheet-col-1-6 sheet-center sheet-small-label sheet-vert-bottom">
             Weapon
@@ -4696,49 +4556,49 @@ Fear Description
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
             Size
           </div>
 
 
           <div class=
-          "sheet-col-1-11 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
             Type
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Mod
           </div>
 
 
           <div class=
-          "sheet-col-1-16 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             To Hit
           </div>
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Damage
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
-            Crit
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
+            Crit %
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Shots
           </div>
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
             Range
           </div>
 
@@ -4748,16 +4608,21 @@ Fear Description
             Ammo Type
           </div>
         </div>
-        <!-- BEGIN ranged weapon row -->
+        <!-- BEGIN ranged weapon 1 row -->
 
 
         <div class="sheet-row">
+            
+            <div class="sheet-col-1-12">
+            <button type="roll" class="sheet-roll" name="roll_ranged1" value="&{template:rangedweapon} {{weaponname=@{rangedweapon1}}} {{weaponskill=[[ d100cs>[[@{ranged1}]]cf<[[@{rangedcrit1}]] ]]}} {{weapondamage=@{rangeddamage1}}}">Attack</button>
+            </div>
+        
           <div class="sheet-col-1-6">
             <input name="attr_rangedweapon1" type="text">
           </div>
 
 
-          <div class="sheet-col-1-10" title="How big is the weapon?">
+          <div class="sheet-col-1-12" title="How big is the weapon?">
             <select name="attr_rangedsize1">
               <option value="Small">
                 Small
@@ -4778,7 +4643,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-10" title="What kind of weapon?">
+          <div class="sheet-col-1-9" title="What kind of weapon?">
             <select name="attr_rangedtype1">
               <option value="@{firearm}">
                 Firearm
@@ -4799,74 +4664,28 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-16">
+          <div class="sheet-col-1-18">
             <input name="attr_rangedmod1" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-16">
+          <div class="sheet-col-1-18">
             <input class="sheet-passive-skill-score" disabled="disabled" name=
             "attr_ranged1" type="number" value="@{rangedtype1}+@{rangedmod1}">
           </div>
 
 
-          <div class="sheet-col-1-10" title=
-          "What is the damage of the weapon?">
-            <select name="attr_rangeddmg1">
-              <option value="15">
-                15
-              </option>
-
-              <option value="20">
-                20
-              </option>
-
-              <option value="20 + 1d4">
-                20 + 1d4
-              </option>
-
-              <option value="30">
-                30
-              </option>
-
-              <option value="35">
-                35
-              </option>
-
-              <option value="40">
-                40
-              </option>
-
-              <option value="50">
-                50
-              </option>
-
-              <option value="3d4*10">
-                3d4 x 10
-              </option>
-
-              <option value="4d4*10">
-                4d4 x 10
-              </option>
-            </select>
+          <div class="sheet-col-1-18" title="What is the damage of the weapon?">
+            <input name="attr_rangeddamage1" type="text" value="0">
           </div>
 
 
-          <div class="sheet-col-1-14" title=
-          "What is the chance of a critical hit?">
-            <select name="attr_rangedcrit1">
-              <option value="5%">
-                5%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-            </select>
+          <div class="sheet-col-1-18" title="What is the chance of a critical hit?">
+            <input name="attr_rangedcrit1" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-14" title=
+          <div class="sheet-col-1-18" title=
           "How many shots can you fire per round?">
             <select name="attr_rangedshots1">
               <option value="1">
@@ -4892,7 +4711,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-8" title="Range?">
+          <div class="sheet-col-1-9" title="Range?">
             <select name="attr_ranged_range1">
               <option value="Very Short">
                 Very Short
@@ -4913,7 +4732,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-8" title=
+          <div class="sheet-col-1-6" title=
           "What type of ammo can this weapon shoot?">
             <select name="attr_ranged_ammo_type1">
               <option value="9 mm">
@@ -4967,87 +4786,100 @@ Fear Description
           </div>
 
 
-          <div class="sheet-row sheet-sub-header">
-            <div class=
-            "sheet-col-2-9 sheet-center sheet-small-label sheet-vert-bottom">
+        <div class="sheet-row sheet-sub-header">
+            <div class="sheet-col-2-9 sheet-center sheet-small-label sheet-vert-bottom">
               Load Magazine
             </div>
 
-
-            <div class=
-            "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
+            <div class="sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
               Ammo Left
             </div>
 
-
-            <div class=
-            "sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">
+            <div class="sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">
               Notes
             </div>
 
+            <div class="sheet-col-2-9" title="What magazine would you like to load into the weapon?">
+                <select name="attr_rangedloaded1">
+                    <option value="@{mag_qty_1}">
+                    Magazine 1
+                    </option>
 
-            <div class="sheet-col-2-9" title=
-            "What magazine would you like to load into the weapon?">
-              <select name="attr_rangedloaded1">
-                <option selected value="@{ammunition1}">
-                  Magazine 1
-                </option>
+                    <option value="@{mag_qty_2}">
+                    Magazine 2
+                    </option>
 
-                <option value="@{ammunition2}">
-                  Magazine 2
-                </option>
+                    <option value="@{mag_qty_3}">
+                    Magazine 3
+                    </option>
 
-                <option value="@{ammunition3}">
-                  Magazine 3
-                </option>
+                    <option value="@{mag_qty_4}">
+                    Magazine 4
+                    </option>
 
-                <option value="@{ammunition4}">
-                  Magazine 4
-                </option>
+                    <option value="@{mag_qty_5}">
+                    Magazine 5
+                    </option>
+                
+                    <option value="@{mag_qty_6}">
+                    Magazine 6
+                    </option>
+                
+                    <option value="@{mag_qty_7}">
+                    Magazine 7
+                    </option>
+                
+                    <option value="@{mag_qty_8}">
+                    Magazine 8
+                    </option>
+                
+                    <option value="@{mag_qty_9}">
+                    Magazine 9
+                    </option>
 
-                <option value="@{ammunition5}">
-                  Magazine 5
-                </option>
+                    <option value="@{mag_qty_10}">
+                    Magazine 10
+                    </option>
 
-                <option value="@{ammunition6}">
-                  Magazine 6
-                </option>
+                    <option value="@{quiver_qty_1}">
+                    Quiver 1
+                    </option>
 
-                <option value="@{ammunition7}">
-                  Quiver 1
-                </option>
-
-                <option value="@{ammunition8}">
-                  Quiver 2
-                </option>
-              </select>
+                    <option value="@{quiver_qty_2}">
+                    Quiver 2
+                    </option>
+                </select>
             </div>
-
 
             <div class="sheet-col-1-9">
-              <input name="attr_rangedammo1" type="number" value=
-              "@{rangedloaded1}">
+                <input name="attr_rangedammo1" type="text">
             </div>
-
 
             <div class="sheet-col-2-3">
               <input name="attr_rangednotes1" type="text">
             </div>
-          </div>
-          <!-- END ranged weapon row -->
+        </div>
+            
 
+          <!-- END ranged weapon 1 row -->
 
           <div class="sheet-col-1-7 sheet-center sheet-small-label">
             &nbsp;
           </div>
         </div>
-        <!-- Begin ranged weapon section -->
+        <!-- Begin ranged weapon 2 section -->
 
 
         <h4 class="sheet-center">Weapon 2</h4>
 
 
         <div class="sheet-row sheet-sub-header">
+          
+          <div class=
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
+            Fire
+          </div>
+          
           <div class=
           "sheet-col-1-6 sheet-center sheet-small-label sheet-vert-bottom">
             Weapon
@@ -5055,49 +4887,49 @@ Fear Description
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
             Size
           </div>
 
 
           <div class=
-          "sheet-col-1-11 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
             Type
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Mod
           </div>
 
 
           <div class=
-          "sheet-col-1-16 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             To Hit
           </div>
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Damage
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
-            Crit
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
+            Crit %
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Shots
           </div>
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
             Range
           </div>
 
@@ -5107,16 +4939,21 @@ Fear Description
             Ammo Type
           </div>
         </div>
-        <!-- BEGIN ranged weapon row -->
+        <!-- BEGIN ranged weapon 2 row -->
 
 
         <div class="sheet-row">
+            
+            <div class="sheet-col-1-12">
+            <button type="roll" class="sheet-roll" name="roll_ranged2" value="&{template:rangedweapon} {{weaponname=@{rangedweapon2}}} {{weaponskill=[[ d100cs>[[@{ranged2}]]cf<[[@{rangedcrit2}]] ]]}} {{weapondamage=@{rangeddamage2}}}">Attack</button>
+            </div>
+        
           <div class="sheet-col-1-6">
             <input name="attr_rangedweapon2" type="text">
           </div>
 
 
-          <div class="sheet-col-1-10" title="How big is the weapon?">
+          <div class="sheet-col-1-12" title="How big is the weapon?">
             <select name="attr_rangedsize2">
               <option value="Small">
                 Small
@@ -5137,7 +4974,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-10" title="What kind of weapon?">
+          <div class="sheet-col-1-9" title="What kind of weapon?">
             <select name="attr_rangedtype2">
               <option value="@{firearm}">
                 Firearm
@@ -5158,74 +4995,28 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-16">
+          <div class="sheet-col-1-18">
             <input name="attr_rangedmod2" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-16">
+          <div class="sheet-col-1-18">
             <input class="sheet-passive-skill-score" disabled="disabled" name=
             "attr_ranged2" type="number" value="@{rangedtype2}+@{rangedmod2}">
           </div>
 
 
-          <div class="sheet-col-1-10" title=
-          "What is the damage of the weapon?">
-            <select name="attr_rangeddmg2">
-              <option value="15">
-                15
-              </option>
-
-              <option value="20">
-                20
-              </option>
-
-              <option value="20 + 1d4">
-                20 + 1d4
-              </option>
-
-              <option value="30">
-                30
-              </option>
-
-              <option value="35">
-                35
-              </option>
-
-              <option value="40">
-                40
-              </option>
-
-              <option value="50">
-                50
-              </option>
-
-              <option value="3d4*10">
-                3d4 x 10
-              </option>
-
-              <option value="4d4*10">
-                4d4 x 10
-              </option>
-            </select>
+          <div class="sheet-col-1-18" title="What is the damage of the weapon?">
+            <input name="attr_rangeddamage2" type="text" value="0">
           </div>
 
 
-          <div class="sheet-col-1-14" title=
-          "What is the chance of a critical hit?">
-            <select name="attr_tangedcrit2">
-              <option value="5%">
-                5%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-            </select>
+          <div class="sheet-col-1-18" title="What is the chance of a critical hit?">
+            <input name="attr_rangedcrit2" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-14" title=
+          <div class="sheet-col-1-18" title=
           "How many shots can you fire per round?">
             <select name="attr_rangedshots2">
               <option value="1">
@@ -5251,7 +5042,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-8" title="Range?">
+          <div class="sheet-col-1-9" title="Range?">
             <select name="attr_ranged_range2">
               <option value="Very Short">
                 Very Short
@@ -5272,7 +5063,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-8" title=
+          <div class="sheet-col-1-6" title=
           "What type of ammo can this weapon shoot?">
             <select name="attr_ranged_ammo_type2">
               <option value="9 mm">
@@ -5318,91 +5109,107 @@ Fear Description
               <option value="40 mm Grenade">
                 40 mm Grenade
               </option>
+
+              <option value="Projectile">
+                Projectile
+              </option>
             </select>
           </div>
 
 
-          <div class="sheet-row sheet-sub-header">
-            <div class=
-            "sheet-col-2-9 sheet-center sheet-small-label sheet-vert-bottom">
+        <div class="sheet-row sheet-sub-header">
+            <div class="sheet-col-2-9 sheet-center sheet-small-label sheet-vert-bottom">
               Load Magazine
             </div>
 
-
-            <div class=
-            "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
+            <div class="sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
               Ammo Left
             </div>
 
-
-            <div class=
-            "sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">
+            <div class="sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">
               Notes
             </div>
 
+            <div class="sheet-col-2-9" title="What magazine would you like to load into the weapon?">
+                <select name="attr_rangedloaded2" type="number">
+                    <option value="@{mag_qty_1}">
+                    Magazine 1
+                    </option>
 
-            <div class="sheet-col-2-9" title=
-            "What magazine would you like to load into the weapon?">
-              <select name="attr_rangedloaded2">
-                <option value="@{ammunition1}">
-                  Magazine 1
-                </option>
+                    <option value="@{mag_qty_2}">
+                    Magazine 2
+                    </option>
 
-                <option value="@{ammunition2}">
-                  Magazine 2
-                </option>
+                    <option value="@{mag_qty_3}">
+                    Magazine 3
+                    </option>
 
-                <option value="@{ammunition3}">
-                  Magazine 3
-                </option>
+                    <option value="@{mag_qty_4}">
+                    Magazine 4
+                    </option>
 
-                <option value="@{ammunition4}">
-                  Magazine 4
-                </option>
+                    <option value="@{mag_qty_5}">
+                    Magazine 5
+                    </option>
+                
+                    <option value="@{mag_qty_6}">
+                    Magazine 6
+                    </option>
+                
+                    <option value="@{mag_qty_7}">
+                    Magazine 7
+                    </option>
+                
+                    <option value="@{mag_qty_8}">
+                    Magazine 8
+                    </option>
+                
+                    <option value="@{mag_qty_9}">
+                    Magazine 9
+                    </option>
 
-                <option value="@{ammunition5}">
-                  Magazine 5
-                </option>
+                    <option value="@{mag_qty_10}">
+                    Magazine 10
+                    </option>
 
-                <option value="@{ammunition6}">
-                  Magazine 6
-                </option>
+                    <option value="@{quiver_qty_1}">
+                    Quiver 1
+                    </option>
 
-                <option value="@{ammunition7}">
-                  Quiver 1
-                </option>
-
-                <option value="@{ammunition8}">
-                  Quiver 2
-                </option>
-              </select>
+                    <option value="@{quiver_qty_2}">
+                    Quiver 2
+                    </option>
+                </select>
             </div>
-
 
             <div class="sheet-col-1-9">
-              <input name="attr_rangedloaded2" type="number" value=
-              "@{rangedloaded2}">
+                <input name="attr_rangedammo2" type="text">
             </div>
-
 
             <div class="sheet-col-2-3">
               <input name="attr_rangednotes2" type="text">
             </div>
           </div>
-          <!-- END ranged weapon row -->
+          <!-- END ranged weapon 2 row -->
 
 
           <div class="sheet-col-1-7 sheet-center sheet-small-label">
             &nbsp;
           </div>
         </div>
-        <!-- Begin ranged weapon section -->
+        <!-- Begin ranged weapon 3 section -->
 
 
         <h4 class="sheet-center">Weapon 3</h4>
 
 
         <div class="sheet-row sheet-sub-header">
+          
+          <div class=
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
+            Fire
+          </div>
+          
           <div class=
           "sheet-col-1-6 sheet-center sheet-small-label sheet-vert-bottom">
             Weapon
@@ -5410,49 +5217,49 @@ Fear Description
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
             Size
           </div>
 
 
           <div class=
-          "sheet-col-1-11 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
             Type
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Mod
           </div>
 
 
           <div class=
-          "sheet-col-1-16 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             To Hit
           </div>
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Damage
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
-            Crit
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
+            Crit %
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Shots
           </div>
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
             Range
           </div>
 
@@ -5462,16 +5269,21 @@ Fear Description
             Ammo Type
           </div>
         </div>
-        <!-- BEGIN ranged weapon row -->
+        <!-- BEGIN ranged weapon 3 row -->
 
 
         <div class="sheet-row">
+            
+            <div class="sheet-col-1-12">
+            <button type="roll" class="sheet-roll" name="roll_ranged3" value="&{template:rangedweapon} {{weaponname=@{rangedweapon3}}} {{weaponskill=[[ d100cs>[[@{ranged3}]]cf<[[@{rangedcrit3}]] ]]}} {{weapondamage=@{rangeddamage3}}}">Attack</button>
+            </div>
+        
           <div class="sheet-col-1-6">
             <input name="attr_rangedweapon3" type="text">
           </div>
 
 
-          <div class="sheet-col-1-10" title="How big is the weapon?">
+          <div class="sheet-col-1-12" title="How big is the weapon?">
             <select name="attr_rangedsize3">
               <option value="Small">
                 Small
@@ -5492,7 +5304,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-10" title="What kind of weapon?">
+          <div class="sheet-col-1-9" title="What kind of weapon?">
             <select name="attr_rangedtype3">
               <option value="@{firearm}">
                 Firearm
@@ -5513,74 +5325,28 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-16">
+          <div class="sheet-col-1-18">
             <input name="attr_rangedmod3" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-16">
+          <div class="sheet-col-1-18">
             <input class="sheet-passive-skill-score" disabled="disabled" name=
             "attr_ranged3" type="number" value="@{rangedtype3}+@{rangedmod3}">
           </div>
 
 
-          <div class="sheet-col-1-10" title=
-          "What is the damage of the weapon?">
-            <select name="attr_rangeddmg3">
-              <option value="15">
-                15
-              </option>
-
-              <option value="20">
-                20
-              </option>
-
-              <option value="20 + 1d4">
-                20 + 1d4
-              </option>
-
-              <option value="30">
-                30
-              </option>
-
-              <option value="35">
-                35
-              </option>
-
-              <option value="40">
-                40
-              </option>
-
-              <option value="50">
-                50
-              </option>
-
-              <option value="3d4*10">
-                3d4 x 10
-              </option>
-
-              <option value="4d4*10">
-                4d4 x 10
-              </option>
-            </select>
+          <div class="sheet-col-1-18" title="What is the damage of the weapon?">
+            <input name="attr_rangeddamage3" type="text" value="0">
           </div>
 
 
-          <div class="sheet-col-1-14" title=
-          "What is the chance of a critical hit?">
-            <select name="attr_rangedcrit3">
-              <option value="5%">
-                5%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-            </select>
+          <div class="sheet-col-1-18" title="What is the chance of a critical hit?">
+            <input name="attr_rangedcrit3" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-14" title=
+          <div class="sheet-col-1-18" title=
           "How many shots can you fire per round?">
             <select name="attr_rangedshots3">
               <option value="1">
@@ -5606,7 +5372,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-8" title="Range?">
+          <div class="sheet-col-1-9" title="Range?">
             <select name="attr_ranged_range3">
               <option value="Very Short">
                 Very Short
@@ -5627,7 +5393,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-8" title=
+          <div class="sheet-col-1-6" title=
           "What type of ammo can this weapon shoot?">
             <select name="attr_ranged_ammo_type3">
               <option value="9 mm">
@@ -5681,68 +5447,74 @@ Fear Description
           </div>
 
 
-          <div class="sheet-row sheet-sub-header">
-            <div class=
-            "sheet-col-2-9 sheet-center sheet-small-label sheet-vert-bottom">
+        <div class="sheet-row sheet-sub-header">
+            <div class="sheet-col-2-9 sheet-center sheet-small-label sheet-vert-bottom">
               Load Magazine
             </div>
 
-
-            <div class=
-            "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
+            <div class="sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
               Ammo Left
             </div>
 
-
-            <div class=
-            "sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">
+            <div class="sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">
               Notes
             </div>
 
+            <div class="sheet-col-2-9" title="What magazine would you like to load into the weapon?">
+                <select name="attr_rangedloaded3">
+                    <option value="@{mag_qty_1}">
+                    Magazine 1
+                    </option>
 
-            <div class="sheet-col-2-9" title=
-            "What magazine would you like to load into the weapon?">
-              <select name="attr_rangedloaded3">
-                <option value="@{ammunition1}">
-                  Magazine 1
-                </option>
+                    <option value="@{mag_qty_2}">
+                    Magazine 2
+                    </option>
 
-                <option value="@{ammunition2}">
-                  Magazine 2
-                </option>
+                    <option value="@{mag_qty_3}">
+                    Magazine 3
+                    </option>
 
-                <option value="@{ammunition3}">
-                  Magazine 3
-                </option>
+                    <option value="@{mag_qty_4}">
+                    Magazine 4
+                    </option>
 
-                <option value="@{ammunition4}">
-                  Magazine 4
-                </option>
+                    <option value="@{mag_qty_5}">
+                    Magazine 5
+                    </option>
+                
+                    <option value="@{mag_qty_6}">
+                    Magazine 6
+                    </option>
+                
+                    <option value="@{mag_qty_7}">
+                    Magazine 7
+                    </option>
+                
+                    <option value="@{mag_qty_8}">
+                    Magazine 8
+                    </option>
+                
+                    <option value="@{mag_qty_9}">
+                    Magazine 9
+                    </option>
 
-                <option value="@{ammunition5}">
-                  Magazine 5
-                </option>
+                    <option value="@{mag_qty_10}">
+                    Magazine 10
+                    </option>
 
-                <option value="@{ammunition6}">
-                  Magazine 6
-                </option>
+                    <option value="@{quiver_qty_1}">
+                    Quiver 1
+                    </option>
 
-                <option value="@{ammunition7}">
-                  Quiver 1
-                </option>
-
-                <option value="@{ammunition8}">
-                  Quiver 2
-                </option>
-              </select>
+                    <option value="@{quiver_qty_2}">
+                    Quiver 2
+                    </option>
+                </select>
             </div>
-
 
             <div class="sheet-col-1-9">
-              <input name="attr_rangedloaded3" type="number" value=
-              "@{rangedloaded3}">
+                <input name="attr_rangedammo3" type="text">
             </div>
-
 
             <div class="sheet-col-2-3">
               <input name="attr_rangednotes3" type="text">
@@ -5755,13 +5527,19 @@ Fear Description
             &nbsp;
           </div>
         </div>
-        <!-- Begin ranged weapon section -->
+        <!-- Begin ranged weapon 4 section -->
 
 
         <h4 class="sheet-center">Weapon 4</h4>
 
 
         <div class="sheet-row sheet-sub-header">
+          
+          <div class=
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
+            Fire
+          </div>
+          
           <div class=
           "sheet-col-1-6 sheet-center sheet-small-label sheet-vert-bottom">
             Weapon
@@ -5769,49 +5547,49 @@ Fear Description
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-12 sheet-center sheet-small-label sheet-vert-bottom">
             Size
           </div>
 
 
           <div class=
-          "sheet-col-1-11 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
             Type
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Mod
           </div>
 
 
           <div class=
-          "sheet-col-1-16 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             To Hit
           </div>
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Damage
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
-            Crit
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
+            Crit %
           </div>
 
 
           <div class=
-          "sheet-col-1-14 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-18 sheet-center sheet-small-label sheet-vert-bottom">
             Shots
           </div>
 
 
           <div class=
-          "sheet-col-1-10 sheet-center sheet-small-label sheet-vert-bottom">
+          "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
             Range
           </div>
 
@@ -5821,16 +5599,21 @@ Fear Description
             Ammo Type
           </div>
         </div>
-        <!-- BEGIN ranged weapon row -->
+        <!-- BEGIN ranged weapon 4 row -->
 
 
         <div class="sheet-row">
+            
+            <div class="sheet-col-1-12">
+            <button type="roll" class="sheet-roll" name="roll_ranged4" value="&{template:rangedweapon} {{weaponname=@{rangedweapon4}}} {{weaponskill=[[ d100cs>[[@{ranged4}]]cf<[[@{rangedcrit4}]] ]]}} {{weapondamage=@{rangeddamage4}}}">Attack</button>
+            </div>
+        
           <div class="sheet-col-1-6">
-            <input name="attr_rangedweapon3" type="text">
+            <input name="attr_rangedweapon4" type="text">
           </div>
 
 
-          <div class="sheet-col-1-10" title="How big is the weapon?">
+          <div class="sheet-col-1-12" title="How big is the weapon?">
             <select name="attr_rangedsize4">
               <option value="Small">
                 Small
@@ -5851,7 +5634,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-10" title="What kind of weapon?">
+          <div class="sheet-col-1-9" title="What kind of weapon?">
             <select name="attr_rangedtype4">
               <option value="@{firearm}">
                 Firearm
@@ -5872,74 +5655,28 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-16">
+          <div class="sheet-col-1-18">
             <input name="attr_rangedmod4" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-16">
+          <div class="sheet-col-1-18">
             <input class="sheet-passive-skill-score" disabled="disabled" name=
             "attr_ranged4" type="number" value="@{rangedtype4}+@{rangedmod4}">
           </div>
 
 
-          <div class="sheet-col-1-10" title=
-          "What is the damage of the weapon?">
-            <select name="attr_rangeddmg4">
-              <option value="15">
-                15
-              </option>
-
-              <option value="20">
-                20
-              </option>
-
-              <option value="20 + 1d4">
-                20 + 1d4
-              </option>
-
-              <option value="30">
-                30
-              </option>
-
-              <option value="35">
-                35
-              </option>
-
-              <option value="40">
-                40
-              </option>
-
-              <option value="50">
-                50
-              </option>
-
-              <option value="3d4*10">
-                3d4 x 10
-              </option>
-
-              <option value="4d4*10">
-                4d4 x 10
-              </option>
-            </select>
+          <div class="sheet-col-1-18" title="What is the damage of the weapon?">
+            <input name="attr_rangeddamage4" type="text" value="0">
           </div>
 
 
-          <div class="sheet-col-1-14" title=
-          "What is the chance of a critical hit?">
-            <select name="attr_rangedcrit4">
-              <option value="5%">
-                5%
-              </option>
-
-              <option value="15%">
-                15%
-              </option>
-            </select>
+          <div class="sheet-col-1-18" title="What is the chance of a critical hit?">
+            <input name="attr_rangedcrit4" step="1" type="number" value="0">
           </div>
 
 
-          <div class="sheet-col-1-14" title=
+          <div class="sheet-col-1-18" title=
           "How many shots can you fire per round?">
             <select name="attr_rangedshots4">
               <option value="1">
@@ -5965,7 +5702,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-8" title="Range?">
+          <div class="sheet-col-1-9" title="Range?">
             <select name="attr_ranged_range4">
               <option value="Very Short">
                 Very Short
@@ -5986,7 +5723,7 @@ Fear Description
           </div>
 
 
-          <div class="sheet-col-1-8" title=
+          <div class="sheet-col-1-6" title=
           "What type of ammo can this weapon shoot?">
             <select name="attr_ranged_ammo_type4">
               <option value="9 mm">
@@ -6040,82 +5777,89 @@ Fear Description
           </div>
 
 
-          <div class="sheet-row sheet-sub-header">
-            <div class=
-            "sheet-col-2-9 sheet-center sheet-small-label sheet-vert-bottom">
+        <div class="sheet-row sheet-sub-header">
+            <div class="sheet-col-2-9 sheet-center sheet-small-label sheet-vert-bottom">
               Load Magazine
             </div>
 
-
-            <div class=
-            "sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
+            <div class="sheet-col-1-9 sheet-center sheet-small-label sheet-vert-bottom">
               Ammo Left
             </div>
 
-
-            <div class=
-            "sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">
+            <div class="sheet-col-2-3 sheet-center sheet-small-label sheet-vert-bottom">
               Notes
             </div>
 
+            <div class="sheet-col-2-9" title="What magazine would you like to load into the weapon?">
+                <select name="attr_rangedloaded4">
+                    <option value="@{mag_qty_1}">
+                    Magazine 1
+                    </option>
 
-            <div class="sheet-col-2-9" title=
-            "What magazine would you like to load into the weapon?">
-              <select name="attr_rangedloaded4">
-                <option value="@{ammunition1}">
-                  Magazine 1
-                </option>
+                    <option value="@{mag_qty_2}">
+                    Magazine 2
+                    </option>
 
-                <option value="@{ammunition2}">
-                  Magazine 2
-                </option>
+                    <option value="@{mag_qty_3}">
+                    Magazine 3
+                    </option>
 
-                <option value="@{ammunition3}">
-                  Magazine 3
-                </option>
+                    <option value="@{mag_qty_4}">
+                    Magazine 4
+                    </option>
 
-                <option value="@{ammunition4}">
-                  Magazine 4
-                </option>
+                    <option value="@{mag_qty_5}">
+                    Magazine 5
+                    </option>
+                
+                    <option value="@{mag_qty_6}">
+                    Magazine 6
+                    </option>
+                
+                    <option value="@{mag_qty_7}">
+                    Magazine 7
+                    </option>
+                
+                    <option value="@{mag_qty_8}">
+                    Magazine 8
+                    </option>
+                
+                    <option value="@{mag_qty_9}">
+                    Magazine 9
+                    </option>
 
-                <option value="@{ammunition5}">
-                  Magazine 5
-                </option>
+                    <option value="@{mag_qty_10}">
+                    Magazine 10
+                    </option>
 
-                <option value="@{ammunition6}">
-                  Magazine 6
-                </option>
+                    <option value="@{quiver_qty_1}">
+                    Quiver 1
+                    </option>
 
-                <option value="@{ammunition7}">
-                  Quiver 1
-                </option>
-
-                <option value="@{ammunition8}">
-                  Quiver 2
-                </option>
-              </select>
+                    <option value="@{quiver_qty_2}">
+                    Quiver 2
+                    </option>
+                </select>
             </div>
-
 
             <div class="sheet-col-1-9">
-              <input name="attr_rangedloaded4" type="number" value=
-              "@{rangedloaded4}">
+                <input name="attr_rangedammo4" type="text">
             </div>
-
 
             <div class="sheet-col-2-3">
               <input name="attr_rangednotes4" type="text">
             </div>
           </div>
           <!-- END ranged weapon row -->
-
-
           <div class="sheet-col-1-7 sheet-center sheet-small-label">
-            &nbsp;
+                &nbsp;
           </div>
         </div>
+    </div>
+                
+                
         <!-- END AUTO GENERATED WEAPON SECTION -->
-      </div>
+      
       <!-- Begin inventory section -->
 
 
@@ -6140,7 +5884,7 @@ Fear Description
 
 
               <div class="sheet-col-1-6 sheet-center sheet-small-label">
-                Magazines
+                Ammunition
               </div>
 
 
@@ -6175,8 +5919,8 @@ Fear Description
 
 
               <div class="sheet-col-1-6 sheet-center">
-                <input disabled="disabled" name="attr_magazine_weight" type=
-                "number" value="@{magazine_weight_calc}">
+                <input disabled="disabled" name="attr_ammunition_weight" type=
+                "number" value="@{ammunition_weight_calc}">
               </div>
 
 
@@ -6189,7 +5933,7 @@ Fear Description
               <div class="sheet-col-1-6 sheet-center sheet-padr">
                 <input class="sheet-passive-skill-score" disabled="disabled"
                 name="attr_total_weight" type="number" value=
-                "(@{backpack_weight} + @{pockets_weight} + @{magazine_weight} + @{equipped_weight})">
+                "(@{backpack_weight} + @{pockets_weight} + @{ammunition_weight} + @{equipped_weight})">
               </div>
 
 
@@ -6219,9 +5963,9 @@ Fear Description
               <span class=
               "sheet-inventorytab sheet-inventorytab2">Pockets</span>
               <input class="sheet-inventorytab sheet-inventorytab3" name=
-              "attr_inventorytab" title="Magazines" type="radio" value="3">
+              "attr_inventorytab" title="Ammunition" type="radio" value="3">
               <span class=
-              "sheet-inventorytab sheet-inventorytab3">Magazines</span>
+              "sheet-inventorytab sheet-inventorytab3">Ammunition</span>
               <input class="sheet-inventorytab sheet-inventorytab4" name=
               "attr_inventorytab" title="Equipped" type="radio" value="4">
               <span class=
@@ -8228,26 +7972,741 @@ Fear Description
                 <!-- END pockets weight calculations-->
               </div>
               <!-- END pockets page -->
-              <!-- BEGIN magazine weight calculations-->
-              <input name="attr_magazine_weight_calc" type="hidden" value="0"> 
-              <!-- END magazine weight calculations-->
+                <!-- BEGIN magazine page -->
+            <div class="sheet-inventory-page3">
+                <h3 class="sheet-center">Magazines</h3>
+                
+                <div class="sheet-row sheet-sub-header">
+                
+                    <div class="sheet-col-1-15 sheet-center sheet-small-label">
+                    Magazine #
+                    </div>
+
+                    <div class="sheet-col-2-15 sheet-center sheet-small-label">
+                    Ammo Type
+                    </div>
+
+                    <div class="sheet-col-1-15 sheet-center sheet-small-label">
+                    Current Qty
+                    </div>
+                    
+                    <div class="sheet-col-1-15 sheet-center sheet-small-label">
+                    Maximum Qty
+                    </div>
+
+                    <div class="sheet-col-2-15 sheet-center sheet-small-label">
+                    Location of Magazine
+                    </div>
+
+                    <div class="sheet-col-7-15 sheet-center sheet-small-label">
+                    Special Properties
+                    </div>
+                    
+                    <div class="sheet-col-1-15 sheet-center sheet-small-label">
+                    Weight
+                    </div>
+                    
+                </div>
+                
+                <!-- Begin Magazine Row 1 -->
+                <div class="sheet-inventory-row1">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 1">
+                    1
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_1" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" max="100" name="attr_mag_qty_1" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_1" type="number">
+                    </div>
+
+
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_1">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_1" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_1" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 1 -->
+                  <!-- Begin Magazine Row 2 -->
+                <div class="sheet-inventory-row2">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 2">
+                    2
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_2" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_2" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_2" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_2">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_2" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_2" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 2 -->
+                  <!-- Begin Magazine Row 3 -->
+                <div class="sheet-inventory-row3">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 3">
+                    3
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_3" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_3" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_3" type="number">
+                    </div>
+
+
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_3">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_3" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_3" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 3 -->
+                  <!-- Begin Magazine Row 4 -->
+                <div class="sheet-inventory-row4">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 4">
+                    4
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_4" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_4" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_4" type="number">
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_4">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_4" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_4" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 4 -->
+                  <!-- Begin Magazine Row 5 -->
+                <div class="sheet-inventory-row5">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 5">
+                    5
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_5" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_5" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_5" type="number">
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_5">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_5" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_5" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 5 -->
+                  <!-- Begin Magazine Row 6 -->
+                <div class="sheet-inventory-row6">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 6">
+                    6
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_6" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_6" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_6" type="number">
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_6">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_6" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_6" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 6 -->
+                  <!-- Begin Magazine Row 7 -->
+                <div class="sheet-inventory-row7">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 7">
+                    7
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_7" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_7" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_7" type="number">
+                    </div>
+
+
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_7">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_7" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_7" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 7 -->
+                  <!-- Begin Magazine Row 8 -->
+                <div class="sheet-inventory-row8">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 8">
+                    8
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_8" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_8" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_8" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_8">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_8" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_8" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 8 -->
+                  <!-- Begin Magazine Row 9 -->
+                <div class="sheet-inventory-row3">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 9">
+                    9
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_9" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_9" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_9" type="number">
+                    </div>
+
+
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_9">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_9" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_9" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 9 -->
+                  <!-- Begin Magazine Row 10 -->
+                <div class="sheet-inventory-row10">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Magazine 10">
+                    10
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in magazine.">
+                        <input name="attr_mag_type_10" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_qty_10" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in magazine.">
+                        <input min="0" name="attr_mag_max_10" type="number">
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Where is the magazine?">
+                        <select name="attr_mag_location_10">
+                            <option value="location_backpack">
+                            Backpack
+                            </option>
+                            <option value="location_pocket">
+                            Pocket
+                            </option>
+                            <option value="location_weapon_1">
+                            Weapon 1
+                            </option>
+                            <option value="location_weapon_2">
+                            Weapon 2
+                            </option><option value="location_weapon_3">
+                            Weapon 3
+                            </option><option value="location_weapon_4">
+                            Weapon 4
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_mag_special_10" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_mag_weight_10" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Magazine Row 10 -->
+                 <!-- Begin Quiver Section -->
+                <h3 class="sheet-center">Quivers</h3>
+                
+                <div class="sheet-row sheet-sub-header">
+                
+                    <div class="sheet-col-1-15 sheet-center sheet-small-label">
+                    Quiver #
+                    </div>
+
+                    <div class="sheet-col-2-15 sheet-center sheet-small-label">
+                    Ammo Type
+                    </div>
+
+                    <div class="sheet-col-1-15 sheet-center sheet-small-label">
+                    Current Qty
+                    </div>
+                    
+                    <div class="sheet-col-1-15 sheet-center sheet-small-label">
+                    Maximum Qty
+                    </div>
+
+                    <div class="sheet-col-2-15 sheet-center sheet-small-label">
+                    Location of Quiver
+                    </div>
+
+                    <div class="sheet-col-7-15 sheet-center sheet-small-label">
+                    Special Properties
+                    </div>
+                    
+                    <div class="sheet-col-1-15 sheet-center sheet-small-label">
+                    Weight
+                    </div>
+                    
+                </div>
+                
+                <!-- Begin Quiver Row 1 -->
+                <div class="sheet-inventory-row1">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Quiver 1">
+                    1
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in quiver.">
+                        <input name="attr_quiver_type_1" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in quiver.">
+                        <input min="0" name="attr_quivermag_qty_1" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in quiver.">
+                        <input min="0" name="attr_quivermag_max_1" type="number">
+                    </div>
+
+
+                    <div class="sheet-col-2-15" title="Where is the Quiver?">
+                        <select name="attr_quiver_location_1">
+                            <option value="location_back">
+                            Slinged Back
+                            </option>
+                            <option value="location_side">
+                            Side Strapped
+                            </option>
+                            <option value="location_other">
+                            Other
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_quiver_special_1" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_quiver_weight_1" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Quiver Row 1 -->
+                  <!-- Begin Quiver Row 1 -->
+                <div class="sheet-inventory-row1">
+                    <div class="sheet-row sheet-grey-row">
+                    <div class="sheet-col-1-15 sheet-vert-middle sheet-inventory-row-number" title="Quiver 2">
+                    2
+                    </div>
+
+                    <div class="sheet-col-2-15" title="Type of ammo in quiver.">
+                        <input name="attr_quiver_type_2" type="text">
+                    </div>
+
+
+                    <div class="sheet-col-1-15" title="Quantity of ammo in quiver.">
+                        <input min="0" name="attr_quivermag_qty_2" type="number">
+                    </div>
+                    
+                    <div class="sheet-col-1-15" title="Maximum quantity of ammo in quiver.">
+                        <input min="0" name="attr_quivermag_max_2" type="number">
+                    </div>
+
+
+                    <div class="sheet-col-2-15" title="Where is the Quiver?">
+                        <select name="attr_quiver_location_2">
+                            <option value="location_back">
+                            Slinged Back
+                            </option>
+                            <option value="location_side">
+                            Side Strapped
+                            </option>
+                            <option value="location_other">
+                            Other
+                            </option>
+                            
+                        </select>
+                    </div>
+
+                    <div class="sheet-col-7-15">
+                        <input name="attr_quiver_special_2" type="text">
+                    </div>
+
+                    <div class="sheet-col-1-15">
+                        <input name="attr_quiver_weight_2" step="0.25" type="number" value="0">
+                    </div>
+                    
+                </div>
+                  <!-- End Quiver Row 2 -->
+                  <!-- BEGIN ammunition weight calculations-->
+                <input name="attr_ammunition_weight_calc" type="hidden" value=
+                "@{mag_weight_1} + @{mag_weight_2} + @{mag_weight_3} + @{mag_weight_4} + @{mag_weight_5} + @{mag_weight_6} + @{mag_weight_7} + @{mag_weight_8} + @{mag_weight_9} + @{mag_weight_10} + @{quiver_weight_1} + @{quiver_weight_2}">
+                <!-- END ammunition weight calculations-->
+                  
+                  
+            </div>
+              <!-- END magazine page -->
+              
+              <!-- Begin Ranged Weapon Attack Template -->
+            <rolltemplate class="sheet-rolltemplate-rangedweapon">
+                <table>
+                    <tr>
+                        <th>{{weaponname}}</th>
+                    </tr>
+    	            <tr>
+                        <td><span class="tcat"></span>{{weaponskill}}</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tcat"></span>{{weapondamage}} Damage</td>
+                    </tr>
+                </table>
+            </rolltemplate>
+                <!--End Ranged Weapon Attack Template-->
+                <!-- Begin Melee Weapon Attack Template -->
+                <rolltemplate class="sheet-rolltemplate-meleeweapon">
+                <table>
+                    <tr>
+                        <th>{{weaponname}}</th>
+                    </tr>
+                    <tr>
+                        <td><span class="tcat"></span>{{weaponskill}}</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tcat"></span>{{weapondamage}} Damage</td>
+                    </tr>
+                    <tr>
+                        <td><span class="tcat"></span>Stagger Range: {{staggerrange}}</td>
+                    </tr>
+                </table>
+            </rolltemplate>
+                <!--End Melee Weapon Attack Template --> 
+                <!-- Begin Melee Weapon Attack Template -->
+                <rolltemplate class="sheet-rolltemplate-skill">
+                <table>
+                    <tr>
+                        <th>{{skillname}}</th>
+                    </tr>
+                    <tr>
+                        <td><span class="tcat"></span>{{skillroll}}</td>
+                    </tr>
+                </table>
+            </rolltemplate>
+                <!--End Melee Weapon Attack Template --> 
+              
+              
                <!-- BEGIN equipped weight calculations-->
                <input name="attr_equipped_weight_calc" type="hidden" value="0">
               <!-- END equipped weight calculations-->
-               <!-- BEGIN temporary ammunition attributes-->
-
-
-              <div hidden="">
-                <input name="attr_ammunition1" type="text" value="1">
-                <input name="attr_ammunition2" type="text" value="2">
-                <input name="attr_ammunition3" type="text" value="3">
-                <input name="attr_ammunition4" type="text" value="4">
-                <input name="attr_ammunition5" type="text" value="5">
-                <input name="attr_ammunition6" type="text" value="6">
-                <input name="attr_ammunition7" type="text" value="7">
-                <input name="attr_ammunition8" type="text" value="8">
-              </div>
-              <!-- END temporary ammunition attributes-->
+               
             </div>
           </div>
         </div>
